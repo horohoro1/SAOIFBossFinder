@@ -64,7 +64,9 @@ h1, h2, h3, p {
    3. レイアウト & ヒーローエリア
    ========================================================================== */
 .page-shell {
-  width: min(1120px, calc(100% - 40px));
+  width: calc(100% - 40px);
+  max-width: 1120px;
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 40px 0 60px;
 }
@@ -337,6 +339,10 @@ h2 {
   z-index: 20;
 }
 
+.boss-card.detail-open {
+  z-index: 20;
+}
+
 .boss-card-topline {
   display: flex;
   align-items: center;
@@ -382,7 +388,9 @@ h2 {
   z-index: 10;
   top: calc(100% + 8px);
   right: 0;
-  width: min(520px, calc(100vw - 32px));
+  width: calc(100vw - 32px);
+  max-width: 520px;
+  box-sizing: border-box;
   max-height: min(72vh, 720px);
   overflow-y: auto;
   border: 1px solid var(--border-color);
@@ -580,7 +588,7 @@ h2 {
 
 @media (max-width: 590px) {
   .page-shell {
-    width: min(100% - 24px, 1120px);
+    width: calc(100% - 24px);
     padding: 20px 0 40px;
   }
 
@@ -596,9 +604,16 @@ h2 {
     grid-template-columns: 1fr;
   }
 
+  .floor-detail {
+    position: static;
+  }
+
   .boss-card:nth-child(n) .boss-detail-tooltip {
-    right: auto;
+    right: 0;
     left: 0;
+    width: auto;
+    max-width: none;
+    box-sizing: border-box;
   }
 }
 
