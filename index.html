@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SAOIFのボスを武器・属性弱点から絞り込める検索ツール"
+    />
+    <title>SAOIF Boss Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">SWORD ART ONLINE INTEGRAL FACTOR</p>
+        <h1>Boss Finder</h1>
+        <div class="hero-controls">
+          <button id="languageToggle" class="language-toggle" type="button" aria-label="Switch to English">
+            EN
+          </button>
+          <button id="themeToggle" class="language-toggle theme-toggle" type="button" aria-label="Toggle dark mode">
+            🌙
+          </button>
+        </div>
+
+      </header>
+
+      <section class="finder" aria-label="ボス検索条件">
+        <div class="filter-heading">
+          <div>
+            <p class="section-kicker">WEAKNESS FILTER</p>
+            <h2 data-i18n="filterTitle">弱点から探す</h2>
+          </div>
+          <button id="clearFilters" class="clear-button" type="button" disabled data-i18n="clear">
+            条件をリセット
+          </button>
+        </div>
+
+        <div class="filter-groups">
+          <fieldset class="filter-group">
+            <legend data-i18n="weaponLegend">武器弱点</legend>
+            <p class="filter-help" data-i18n="multiple">複数選択可</p>
+            <div id="weaponFilters" class="filter-options" aria-label="武器弱点"></div>
+          </fieldset>
+
+          <fieldset class="filter-group">
+            <legend data-i18n="attributeLegend">属性弱点</legend>
+            <p class="filter-help" data-i18n="multiple">複数選択可</p>
+            <div id="attributeFilters" class="filter-options" aria-label="属性弱点"></div>
+          </fieldset>
+
+          <fieldset class="filter-group">
+            <legend data-i18n="locationLegend">エリア</legend>
+            <p class="filter-help" data-i18n="multiple">複数選択可</p>
+            <div id="locationFilters" class="filter-options" aria-label="エリア"></div>
+          </fieldset>
+
+          <fieldset id="chaosLevelFilterGroup" class="filter-group" hidden>
+            <legend data-i18n="chaosLevelLegend">カオスレベル</legend>
+            <p class="filter-help" data-i18n="multiple">複数選択可</p>
+            <div id="chaosLevelFilters" class="filter-options" aria-label="カオスレベル"></div>
+          </fieldset>
+
+          <fieldset id="integralFilterGroup" class="filter-group" hidden>
+            <legend data-i18n="integralLegend">インテグラル</legend>
+            <p class="filter-help" data-i18n="multiple">複数選択可</p>
+            <div id="integralFilters" class="filter-options" aria-label="インテグラル"></div>
+          </fieldset>
+        </div>
+
+        <section id="ingotFiltersSection" class="ingot-filters" hidden aria-label="入手インゴットで絞り込み">
+          <div class="ingot-filter-heading">
+            <p class="section-kicker">DUNGEON INGOT</p>
+            <h3 data-i18n="ingotFilterTitle">入手インゴットで絞り込み</h3>
+          </div>
+          <p class="filter-note" data-i18n="ingotFilterNote">
+            同じ分類内ではいずれか、異なる分類ではすべての条件に一致するインゴットを持つボスを表示します。
+          </p>
+          <div class="filter-groups">
+            <fieldset class="filter-group">
+              <legend data-i18n="ingotColLegend">Col獲得量</legend>
+              <p class="filter-help" data-i18n="multiple">複数選択可</p>
+              <div id="ingotColFilters" class="filter-options" aria-label="Col獲得量"></div>
+            </fieldset>
+
+            <fieldset class="filter-group">
+              <legend data-i18n="ingotProficiencyLegend">熟練度経験値</legend>
+              <p class="filter-help" data-i18n="multiple">複数選択可</p>
+              <div id="ingotProficiencyFilters" class="filter-options" aria-label="熟練度経験値"></div>
+            </fieldset>
+
+            <fieldset class="filter-group">
+              <legend data-i18n="ingotExperienceLegend">経験値</legend>
+              <p class="filter-help" data-i18n="multiple">複数選択可</p>
+              <div id="ingotExperienceFilters" class="filter-options" aria-label="経験値"></div>
+            </fieldset>
+
+            <fieldset class="filter-group">
+              <legend data-i18n="ingotDamageLegend">ダメージ</legend>
+              <p class="filter-help" data-i18n="multiple">複数選択可</p>
+              <div id="ingotDamageFilters" class="filter-options" aria-label="ダメージ"></div>
+            </fieldset>
+
+            <fieldset class="filter-group">
+              <legend data-i18n="ingotWeaponTypeLegend">武器種</legend>
+              <p class="filter-help" data-i18n="multiple">複数選択可</p>
+              <div id="ingotWeaponTypeFilters" class="filter-options" aria-label="武器種"></div>
+            </fieldset>
+
+            <fieldset class="filter-group">
+              <legend data-i18n="ingotWeaponWeaknessLegend">武器弱点</legend>
+              <p class="filter-help" data-i18n="multiple">複数選択可</p>
+              <div id="ingotWeaponWeaknessFilters" class="filter-options" aria-label="武器弱点"></div>
+            </fieldset>
+
+            <fieldset class="filter-group">
+              <legend data-i18n="ingotAttributeLegend">属性</legend>
+              <p class="filter-help" data-i18n="multiple">複数選択可</p>
+              <div id="ingotAttributeFilters" class="filter-options" aria-label="属性"></div>
+            </fieldset>
+          </div>
+        </section>
+
+      </section>
+
+      <section class="results-section" aria-live="polite">
+        <div class="results-heading">
+          <div>
+            <p class="section-kicker">SEARCH RESULTS</p>
+            <h2 id="resultTitle" data-i18n="resultTitle">ボス一覧</h2>
+          </div>
+          <p id="resultCount" class="result-count">読み込み中…</p>
+        </div>
+        <div id="activeFilters" class="active-filters" hidden></div>
+        <div id="bossList" class="boss-grid" aria-busy="true"></div>
+      </section>
+    </main>
+
+    <template id="bossCardTemplate">
+      <article class="boss-card">
+        <div class="boss-card-topline">
+          <p class="boss-location"></p>
+          <div class="floor-detail">
+            <span class="boss-id"></span>
+            <div class="boss-detail-tooltip" hidden>
+              <div class="boss-detail-images"></div>
+            </div>
+          </div>
+        </div>
+        <h3 class="boss-name"></h3>
+        <p class="boss-subname"></p>
+        <figure class="ingot-image" hidden>
+          <img class="ingot-thumbnail" loading="lazy" />
+        </figure>
+        <div class="weaknesses">
+          <div class="weakness-row weapon-row" hidden>
+            <span class="weakness-label">武器</span>
+            <div class="badge-list weapon-badges"></div>
+          </div>
+          <div class="weakness-row attribute-row" hidden>
+            <span class="weakness-label">属性</span>
+            <div class="badge-list attribute-badges"></div>
+          </div>
+          <div class="weakness-row ingot-row" hidden>
+            <span class="weakness-label"></span>
+            <span class="ingot-name"></span>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>

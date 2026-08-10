@@ -1,0 +1,179 @@
+Chapter 1
+Labyrinth
+
+Floor	Boss	Weaknesses	Integral Series	Core Metal drop?
+1st Floor	Illfang the Kobold Lord	斬火	None	No
+2nd Floor	Asterios the Taurus King　斬水
+3rd Floor	Nerius The Evil Treant	突風・火
+4th Floor	Wythege the Hippocampus	突土
+5th Floor	Fuscus the Vacant Colossus	残聖
+6th Floor	Pierce the Rogue Manticore	打水
+7th Floor	Thor the Annoying Troll	　　　打聖・闇
+8th Floor	Envy the Witch	thumb, thumb	打聖
+9th Floor	Demonic the Fallen Elven	突聖・闇
+10th Floor	Kagachi the Samurai Lord	突聖・闇
+11th Floor	The Storm Griffin	突土
+12th Floor	The Strict Hermit	打・突・斬　聖・闇
+13th Floor	Alaz The Blaze Shooter	打水b	Integral
+14th Floor	Pholus the Centaur Chieftain	突聖・闇	Yes, Core Metal
+20th Floor	The One-Eyed Beast	斬火
+25th Floor	Asura the Executioner	突火	Nox
+27th Floor	Dallos the Crossgigas	打風
+35th Floor	Stig the Sticky Thing	残聖
+40th Floor	Bracken the Prison Warden	斬土	Lux
+47th Floor	Leia the Legion Butterfly	突水
+50th Floor	The Last Number	打闇
+61st Floor	Nasya the Nine-Life Snake	突風	Rosso
+74th Floor	The Gleam Eyes	残聖	No
+75th Floor	The Skull Reaper	打火	None	Yes, Core Metal+++
+81st Floor	Lundgren the Land Devourer	斬水	Rosso	No
+85th Floor	Huang the Hundred Arms	突火	Yasha	No
+91st Floor	Dorz'l the Chaos Drake	打聖
+100th Floor	An Incarnate of the Radius	斬火	Yes, Core Metal+++
+
+
+
+Chapter 2
+Labyrinth
+Floor	Boss	Weaknesses	Integral Series	Core Metal drop?
+31st Floor	Naruha the Nine-tailed	突水	Gaou	No
+79th Floor	Octa the Overseer	打闇
+83rd Floor	Teo the Teaser Tentacles	残風
+51st Floor	The Metal Reaper	打土	Machina
+17th Floor	Wex the Extreme Wyrm	突聖
+69th Floor	Alphard the Adamas Snake	斬闇
+23rd Floor	The Bloody Eyes	打水	Gale
+19th Floor	Oddie the Optimized Thing	突闇
+33rd Floor	Erak the Eliminator	斬土
+44th Floor	An Invictus of the Cherub	打風	Rex
+24th Floor	Brug the Brutal Brancher	突土
+89th Floor	Notte the Magna Arcana	斬水
+16th Floor	The Strike Hermit	突火	Lava
+65th Floor	Jack the Jackass Jock	打聖
+
+Chapter 1
+Dungeon
+Floor	Boss	Weaknesses
+3rd Floor	Nephila Regina	突風・火
+4th Floor	Magnatherium	突土
+5th Floor	Vacuous Monarch	残聖
+6th Floor	Mad Claw Scorpion	打水
+7th Floor	Blood Chain Fenrir	打聖・闇
+8th Floor	Blast Black Cat	打聖
+9th Floor	Venom Cockatrice	突聖・闇
+10th Floor	Rapid Stream Kada	突聖・闇
+11th Floor	Zehghi the Flame Caller	突土
+12th Floor	Captain Demon Sword	打聖・闇
+13th Floor	Flame Lizard Warrior	打水
+14th Floor	Scatter Elder Mush	突聖・闇
+20th Floor	Blueite Golem	斬火
+25th Floor	Phantom Furniture	突火
+27th Floor	Glitter Harpy	打風
+35th Floor	Omnivorous Chimera	残聖
+40th Floor	Feral Warder Chief	斬土
+47th Floor	Garden Tarantula	突水
+48th Floor	Vortex Seahorse	　残聖
+50th Floor	Blueite Golem 00	打闇
+55th Floor	X'rphan the White Wyrm	突火
+61st Floor	Margaret the Naughty Mermaid	突風
+68th Floor	Relentless Ravager	打土
+75th Floor	Grazzo the Grand Champ	打火
+77th Floor	Rafe the Wreckingman	突闇
+81st Floor	Durun the Millennial Wolf	斬水
+85th Floor	Shengxing the Sacred Beast	突火
+87th Floor	Mateo the Mounting Macaque	斬土
+91st Floor	Knight Soul	打聖
+94th Floor	Dominant Cogitat	突闇
+99th Floor	Derek the Discipline Dragoon	打風
+
+
+Chapter 2
+Dungeon
+Floor	Boss	Weaknesses
+56th Floor	Valt the Violent Violet	突土
+63rd Floor	Cor'rua the Cold Gorgon	打闇
+31st Floor	Dagan the Ogrian Chief	突水
+79th Floor	Scad the Squeezer	打闇
+42nd Floor	Plasterer Hermit	突火
+83rd Floor	Calor, the First Admiral	斬風
+26th Floor	Utsuroubou the Pretender	突闇
+38th Floor	Invi the Propinquus Nocte	斬水
+51st Floor	Merric the Magichrome Morpho	打土
+17th Floor	Tarkus the Tyrant Tusk	突聖
+69th Floor	Inas the Adamasadderian Queen   斬闇
+23rd Floor	Tsubaki the Blade Maiden	打水
+72nd Floor	Walad the Wormy Puppeteer	斬聖
+19th Floor	Eddie the Embedded Beast	突闇
+96th Floor	Yuniy the United Unicorns	打聖
+33rd Floor	Van the Vermilion Griffin	斬土
+44th Floor	Stratos the St. Centaur	　打風
+24th Floor	Phad the Dragonian Pugilist	突土
+58th Floor	Lauda the Lancer Whale	打闇
+89th Floor	LdRd the Party Animal	斬水
+16th Floor	Dozuchi the Ley Liner	突火
+65th Floor	Dino the Dracoag Boss	打聖
+92nd Floor	Leonhard the Beasted Lord	突土
+
+
+Underground Labyrinth
+Floor	Boss	Integral Series Shield	Weaknesses
+B1F	Brave Harbinger	None	打火
+B2F	Bennu: Venom Cockatrice	Fermat	突風
+B3F	Kenneth: Crimson Kobold Lord	斬水
+B4F	Caz: Cannibal Manticore	突土
+B5F	Stacy: Spit Spider	Nox Fermat	突火
+B6F	Chloro : Chloride Blazer	突水
+B7F	Eckard : Rotsehen Augen	斬闇
+B8F	Greta : Martial Witch	Gauss	打水
+
+
+Chaos Showdown
+Level	Boss	Weaknesses	Crystal Series	Party available?
+90	Dark Black King	打	Crimson	Yes
+Dark Black Thunder Bull	斬風
+Dark Black Spirit Tree	斬火
+
+95	Dark Black Sea Horse	突土	Amber
+Dark Black False Statue	突火
+Dark Black Beast	斬水
+
+110	Dark Black Colossal	突聖	Topaz
+Dark Black Frozen Evil	打闇
+Dark Black Evil Spirit	打土
+
+135	Dark Black Snake Samurai	斬風	Emerald
+Dark Black Griffin	突水
+Dark Black Sturdy Crab	打・突　聖
+
+155	Dark Black Blazing	斬闇	Sapphire
+Dark Black Half Beast	突土
+Dark Black One-Eyed Beast	打火
+
+175	Dark Black Asura	打水	Indigo
+Dark Black Crossgigas	残聖
+Dark Black Sticky Thing	突風
+
+195	Dark Black Warden	突闇	Amethyst
+Dark Black Butterfly	打風
+Dark Black Last Number	斬土
+
+215	Dark Black White Wyrm	斬水	Quartz
+Dark Black Sea Snake	打聖
+Dark Black Gleam Eyes	突火
+
+235	Dark Black Land Devourer	打闇	Rose Quartz	No
+Dark Black Hundred Arms	突水
+Dark Black Chaos Drake	斬火
+
+255	Dark Black Nine-tailed Fox	打火	Sky
+Dark Black Overseer	残聖
+Dark Black Teaser Tentacles	突風
+
+275	Dark Black Metal Reaper	突聖	Deep Emerald
+Dark Black Extreme Wyrm	斬風
+Dark Black Adamas Snake	打土
+
+295	Unknown	Unknown	Deep Amethyst
+Dark Black Optimized Thing	打水
+Dark Black Eliminator	突闇
+

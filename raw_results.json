@@ -1,0 +1,1137 @@
+[
+  {
+    "source_image": "dungeon (1).png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": null,
+      "damage": "nonCritical",
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": [
+        "火"
+      ]
+    },
+    "name": "怪食花のインゴット",
+    "raw_text": "火属性スキャンの弱点ダメージが1.18%上昇 ※重複不可 火属性以外のダメージが50%低下",
+    "notes": [
+      "※重複不可"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon (2).png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": null,
+      "damage": "nonCritical",
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": [
+        "聖"
+      ]
+    },
+    "name": "青眼魔のインゴット",
+    "raw_text": "聖属性スキルの弱点ダメージが1.2%上昇 ※重複不可 聖属性以外のダメージが50%低下",
+    "notes": [
+      "※重複不可"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "source_image": "dungeon10.png",
+    "filters": {
+      "col": null,
+      "proficiency": "percent",
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "両手斧"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "苛蛇のインゴット",
+    "raw_text": "両手斧の熟練度経験値獲得量が20.6%上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon11.png",
+    "filters": {
+      "col": null,
+      "proficiency": "percent",
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "両手槍"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "炎巨人のインゴット",
+    "raw_text": "両手槍の熟練度経験値獲得量が20.6%上昇 最大HPが25%低下",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1
+  },
+  {
+    "source_image": "dungeon12.png",
+    "filters": {
+      "col": null,
+      "proficiency": "percent",
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "短剣"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "魔船長のインゴット",
+    "raw_text": "短剣の熟練度経験値獲得量が20.6%上昇",
+    "notes": [
+      "重複不可",
+      "パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon13.png",
+    "filters": {
+      "col": null,
+      "proficiency": "percent",
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "盾"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "炎蜥士のインゴット",
+    "raw_text": "盾の熟練度経験値獲得量が20.6%上昇",
+    "notes": [
+      "{\"note_type\": \"restriction\", \"content\": \"重複不可\"}",
+      "{\"note_type\": \"restriction\", \"content\": \"パートナー無効\"}"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "source_image": "dungeon14.png",
+    "filters": {
+      "col": null,
+      "proficiency": "percent",
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "片手直剣"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "長老茸のインゴット",
+    "raw_text": "片手直剣の熟練度経験値獲得量が20.6%上昇",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon16.png",
+    "filters": {
+      "col": "fixed",
+      "proficiency": null,
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "片手細剣"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "土蝕のインゴット",
+    "raw_text": "片手細剣装備時のCol獲得量が10上昇",
+    "notes": [
+      "重複不可",
+      "パートナー無効"
+    ],
+    "confidence": 99
+  },
+  {
+    "source_image": "dungeon17.png",
+    "filters": {
+      "col": "fixed",
+      "proficiency": null,
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "両手槍"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "暴帝竜のインゴット",
+    "raw_text": "両手槍装備時のCol獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon19.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": "fixed",
+      "damage": null,
+      "weaponTypes": [
+        "両手槍"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "魔界獣のインゴット",
+    "raw_text": "両手槍装備時の経験値獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon20.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": "fixed",
+      "damage": null,
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "輝蒼岩のインゴット",
+    "raw_text": "経験値獲得量が10上昇 ※重複不可",
+    "notes": [
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon23.png",
+    "filters": {
+      "col": "fixed",
+      "proficiency": null,
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "弓"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "鎧鬼姫のインゴット",
+    "raw_text": "弓装備時のCol獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "source_image": "dungeon24.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": "fixed",
+      "damage": null,
+      "weaponTypes": [
+        "弓"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "竜拳士のインゴット",
+    "raw_text": "弓装備時の経験値獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1
+  },
+  {
+    "source_image": "dungeon25.png",
+    "filters": {
+      "col": null,
+      "proficiency": "fixed",
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "両手斧"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "怪奇楼のインゴット",
+    "raw_text": "Select Item",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon26.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": null,
+      "damage": "nonCritical",
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": [
+        "闇"
+      ]
+    },
+    "name": "空弾のインゴット",
+    "raw_text": "毒状態の敵に対して攻撃時、闇属性のダメージが1.18%上昇 ※重複不可 毒状態の敵以外へのダメージが50%低下",
+    "notes": [
+      "※重複不可"
+    ],
+    "confidence": 1
+  },
+  {
+    "source_image": "dungeon27.png",
+    "filters": {
+      "col": null,
+      "proficiency": "fixed",
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "両手槍"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "煌鳥人のインゴット",
+    "raw_text": "両手槍の熟練度経験値獲得量が2上昇 ※重複不可 ※パートナー無効 最大HPが50%低下",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon3.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": "percent",
+      "damage": null,
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "大蜘蛛のインゴット",
+    "raw_text": "経験値獲得量が20.6%上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon31.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": "fixed",
+      "damage": null,
+      "weaponTypes": [
+        "片手細剣"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "賊鬼頭のインゴット",
+    "raw_text": "片手細剣装備時の経験値獲得量が10上昇",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon33.png",
+    "filters": {
+      "col": "fixed",
+      "proficiency": null,
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "短剣"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "朱鷲獣のインゴット",
+    "raw_text": "短剣装備時のCol獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon35.png",
+    "filters": {
+      "col": "fixed",
+      "proficiency": null,
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "合成獣のインゴット",
+    "raw_text": "Col獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが50%低下",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon38.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": null,
+      "damage": "nonCritical",
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": [
+        "水"
+      ]
+    },
+    "name": "吸血貴のインゴット",
+    "raw_text": "氷傷状態の敵に対して攻撃時、水属性のダメージが1.18%上昇 ※重複不可 冰傷状態の敵以外へのダメージが50%低下",
+    "notes": [
+      "※重複不可"
+    ],
+    "confidence": 99.5
+  },
+  {
+    "source_image": "dungeon4.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "暴君熊のインゴット",
+    "raw_text": "フィールド上の回復オブジェクト破壊による自然回復時間の20.6％延長、フィールド上の回復オブジェクト破壊による自然回復量の25％低下を含むアイテム。※重複不可 ※パートナー無効",
+    "notes": [
+      "重複不可",
+      "パートナー無効"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "source_image": "dungeon40.png",
+    "filters": {
+      "col": null,
+      "proficiency": "fixed",
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "弓"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "悪魔長のインゴット",
+    "raw_text": "弓の熟練度経験値獲得量が2上昇 ※重複不可 ※パートナー無効 最大HPが50%低下",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon42.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": null,
+      "damage": "nonCritical",
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": [
+        "火"
+      ]
+    },
+    "name": "藍繡殻のインゴット",
+    "raw_text": "火傷状態の敵に対して攻撃時、火属性のダメージが1.18%上昇 ※重複不可 火傷状態の敵以外へのダメージが50%低下",
+    "notes": [
+      "※重複不可"
+    ],
+    "confidence": 100
+  },
+  {
+    "source_image": "dungeon44.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": "fixed",
+      "damage": null,
+      "weaponTypes": [
+        "片手棍"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "聖人馬のインゴット",
+    "raw_text": "片手棍装備時の経験値獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+    "notes": [
+      "重複不可",
+      "パートナー無効"
+    ],
+    "confidence": 99
+  },
+  {
+    "source_image": "dungeon47.png",
+    "filters": {
+      "col": null,
+      "proficiency": "fixed",
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "片手棍"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "園蜘蛛のインゴット",
+    "raw_text": "片手棍の熟練度経験値獲得量が2上昇 ※重複不可",
+    "notes": [
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon48.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": null,
+      "damage": "critical",
+      "weaponTypes": [],
+      "weaponWeaknesses": [
+        "打"
+      ],
+      "attributes": []
+    },
+    "name": "森林馬のインゴット",
+    "raw_text": "打属性スチルのクリティカルダメージが5.2%上昇 ※重複不可 打属性以外のダメージが50%低下",
+    "notes": [
+      "※重複不可"
+    ],
+    "confidence": 100
+  },
+  {
+    "source_image": "dungeon5.png",
+    "filters": {
+      "col": null,
+      "proficiency": "percent",
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "片手細剣"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "虚空王のインゴット",
+    "raw_text": "片手細剣の熟練度経験値獲得量が20.6%上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+    "notes": [
+      "重複不可",
+      "パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon50.png",
+    "filters": {
+      "col": null,
+      "proficiency": "fixed",
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "盾"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "双零岩のインゴット",
+    "raw_text": "盾の熟練度経験値獲得量が2上昇 ※重複不可 ※パートナー無効 最大HPが50%低下",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": "high"
+  },
+  {
+    "source_image": "dungeon51.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": "fixed",
+      "damage": null,
+      "weaponTypes": [
+        "両手斧"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "粒翅蝶のインゴット",
+    "raw_text": "両手斧装備時の経験値獲得量が10上昇",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "source_image": "dungeon55.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": null,
+      "damage": "critical",
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": [
+        "火"
+      ]
+    },
+    "name": "白龍のインゴット",
+    "raw_text": "火属性スキルのクリティカルダメージが5.2％上昇 ※重複不可 火属性以外のダメージが50％低下",
+    "notes": [
+      "※重複不可"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon56.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": null,
+      "damage": "critical",
+      "weaponTypes": [],
+      "weaponWeaknesses": [
+        "斬"
+      ],
+      "attributes": []
+    },
+    "name": "紫怨鬼のインゴット",
+    "raw_text": "斬属性スキルのクリティカルダメージが5.2%上昇 ※重複不可 斬属性以外のダメージが50%低下",
+    "notes": [
+      "* 重複不可"
+    ],
+    "confidence": "high"
+  },
+  {
+    "source_image": "dungeon58.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": null,
+      "damage": "nonCritical",
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": [
+        "風"
+      ]
+    },
+    "name": "槍騎鯨のインゴット",
+    "raw_text": "",
+    "notes": [
+      "※重複不可"
+    ],
+    "confidence": 1
+  },
+  {
+    "source_image": "dungeon6.png",
+    "filters": {
+      "col": null,
+      "proficiency": "percent",
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "片手棍"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "狂爪蠍のインゴット",
+    "raw_text": "片手棍の熟練度経験値獲得量が20.6%上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon61.png",
+    "filters": {
+      "col": null,
+      "proficiency": "fixed",
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "片手細剣"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "人魚のインゴット",
+    "raw_text": "片手細剣の熟練度経験値獲得量が2上昇",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon63.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": null,
+      "damage": "critical",
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": [
+        "聖"
+      ]
+    },
+    "name": "凍蛇妃のインゴット",
+    "raw_text": "聖属性スキルのクリティカルダメージが5.2%上昇 ※重複不可 聖属性以外のダメージが50%低下",
+    "notes": [
+      "※重複不可"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon65.png",
+    "filters": {
+      "col": "fixed",
+      "proficiency": null,
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "両手斧"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "犯罪王のインゴット",
+    "raw_text": "両手斧装備時のCol獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon68.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "水洞亀のインゴット",
+    "raw_text": "",
+    "notes": [
+      "※重複不可"
+    ],
+    "confidence": 1
+  },
+  {
+    "source_image": "dungeon69.png",
+    "filters": {
+      "col": "fixed",
+      "proficiency": null,
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "片手直剣"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "蛇人王のインゴット",
+    "raw_text": "片手直剣装備時のCol獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+    "notes": [
+      "无法重复使用",
+      "对伙伴无效"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "source_image": "dungeon7.png",
+    "filters": {
+      "col": "percent",
+      "proficiency": null,
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "血鎖狼のインゴット",
+    "raw_text": "Col獲得量が20.6%上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon72.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": null,
+      "damage": "nonCritical",
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": [
+        "聖"
+      ]
+    },
+    "name": "蟲術士のインゴット",
+    "raw_text": "出血状態の敵に対して攻撃時、聖属性のダメージが1.18%上昇 ※重複不可 出血状態の敵以外へのダメージが50%低下",
+    "notes": [
+      "※重複不可"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon75.png",
+    "filters": {
+      "col": null,
+      "proficiency": "fixed",
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "短剣"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "剣闘王のインゴット",
+    "raw_text": "短剣の熟練度経験値獲得量が2上昇 ※重複不可 ※パートナー無効 最大HPが50%低下",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon77.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": null,
+      "damage": "critical",
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": [
+        "闇"
+      ]
+    },
+    "name": "炎痕のインゴット",
+    "raw_text": "闇属性スキルのクリティカルダメージが5.2%上昇 ※重複不可 闇属性以外のダメージが50%低下",
+    "notes": [
+      "※重複不可"
+    ],
+    "confidence": 1
+  },
+  {
+    "source_image": "dungeon79.png",
+    "filters": {
+      "col": "fixed",
+      "proficiency": null,
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "片手棍"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "牛巨人のインゴット",
+    "raw_text": "片手棍装備時のCol獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon8.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "玄猫のインゴット",
+    "raw_text": "フィールド上の回復オブジェクト破壊による自然回復量が20.6%上昇 ※重複不可 ※パートナー無効 フィールド上の回復オブジェクト破壊による自然回復時間が25%減少",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon81.png",
+    "filters": {
+      "col": null,
+      "proficiency": "fixed",
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "片手直剣"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "狼王のインゴット",
+    "raw_text": "片手直剣の熟練度経験値獲得量が2上昇",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1
+  },
+  {
+    "source_image": "dungeon83.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": "fixed",
+      "damage": null,
+      "weaponTypes": [
+        "短剣"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "船団祖のインゴット",
+    "raw_text": "短剣装備時の経験値獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 100
+  },
+  {
+    "source_image": "dungeon85.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": "percent",
+      "damage": null,
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "聖星獣のインゴット",
+    "raw_text": "経験値獲得量が26%上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 100
+  },
+  {
+    "source_image": "dungeon87.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": null,
+      "damage": "critical",
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": [
+        "水"
+      ]
+    },
+    "name": "格付猿のインゴット",
+    "raw_text": "水属性スキルのクリティカルダメージが5.2%上昇 ※重複不可 水属性以外のダメージが50%低下",
+    "notes": [
+      "※重複不可"
+    ],
+    "confidence": 1
+  },
+  {
+    "source_image": "dungeon89.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": "fixed",
+      "damage": null,
+      "weaponTypes": [
+        "片手直剣"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "乱痴猿のインゴット",
+    "raw_text": "片手直剣装備時の経験値獲得量が10上昇",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon9.png",
+    "filters": {
+      "col": null,
+      "proficiency": "percent",
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [
+        "弓"
+      ],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "毒怪鳥のインゴット",
+    "raw_text": "弓の熟練度経験値獲得量が20.6%上昇",
+    "notes": [],
+    "confidence": "high"
+  },
+  {
+    "source_image": "dungeon91.png",
+    "filters": {
+      "col": "percent",
+      "proficiency": null,
+      "experience": null,
+      "damage": null,
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": []
+    },
+    "name": "騎士魂のインゴット",
+    "raw_text": "Col獲得量が26%上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+    "notes": [
+      "※重複不可",
+      "※パートナー無効"
+    ],
+    "confidence": 1.0
+  },
+  {
+    "source_image": "dungeon92.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": null,
+      "damage": "nonCritical",
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": [
+        "土"
+      ]
+    },
+    "name": "獣拝王のインゴット",
+    "raw_text": "氷傷状態の敵に対して攻撃時、土属性のダメージが1.18%上昇 ※重複不可 冰傷状態の敵以外へのダメージが50%低下",
+    "notes": [
+      "重複不可"
+    ],
+    "confidence": 1
+  },
+  {
+    "source_image": "dungeon94.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": null,
+      "damage": "critical",
+      "weaponTypes": [],
+      "weaponWeaknesses": [
+        "突"
+      ],
+      "attributes": []
+    },
+    "name": "剛成獣のインゴット",
+    "raw_text": "突属性スキルのクリティカルダメージが5.2%上昇 ※重複不可 突属性以外のダメージが50%低下",
+    "notes": [
+      "※重複不可"
+    ],
+    "confidence": "high"
+  },
+  {
+    "source_image": "dungeon96.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": null,
+      "damage": "nonCritical",
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": [
+        "土"
+      ]
+    },
+    "name": "連身獣のインゴット",
+    "raw_text": "毒状態の敵に対して攻撃時、土属性のダメージが1.18%上昇 ※重複不可 毒状態の敵以外へのダメージが50%低下",
+    "notes": [
+      "※重複不可"
+    ],
+    "confidence": 100
+  },
+  {
+    "source_image": "dungeon99.png",
+    "filters": {
+      "col": null,
+      "proficiency": null,
+      "experience": null,
+      "damage": "critical",
+      "weaponTypes": [],
+      "weaponWeaknesses": [],
+      "attributes": [
+        "風"
+      ]
+    },
+    "name": "竜騎士のインゴット",
+    "raw_text": "風属性スキルのクリティカルダメージが5.2%上昇 ※重複不可 風属性以外のダメージが50%低下",
+    "notes": [
+      "※重複不可"
+    ],
+    "confidence": 1.0
+  }
+]

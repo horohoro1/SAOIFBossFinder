@@ -1,0 +1,3119 @@
+[
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 1,
+    "nickname": "コボルドロード",
+    "name": "イルファング・ザ・コボルドロード",
+    "englishName": "Illfang the Kobold Lord",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "火"
+    ],
+    "statusWeakness": [],
+    "coreMetalDrop": "No"
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 2,
+    "nickname": "《トーラスキング》含む3体",
+    "name": [
+      "ナト・ザ・コローネル・トーラス",
+      "バラン・ザ・ジェネラル・トーラス",
+      "アステリオス・ザ・トーラスキング"
+    ],
+    "englishName": [
+      "Nato the Colonel Taurus",
+      "Baran the General Taurus",
+      "Asterios the Taurus King"
+    ],
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "水"
+    ],
+    "statusWeakness": []
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 3,
+    "nickname": "イビルトレント",
+    "name": "ネリウス・ジ・イビルトレント",
+    "englishName": "Nerius The Evil Treant",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "風",
+      "火"
+    ],
+    "statusWeakness": []
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 4,
+    "nickname": "ヒッポカンプ",
+    "name": "ウィズゲー・ザ・ヒッポカンプ",
+    "englishName": "Wythege the Hippocampus",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "土"
+    ],
+    "statusWeakness": []
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 5,
+    "nickname": "コロッサス",
+    "name": "フスクス・ザ・ヴェイカントコロッサス",
+    "englishName": "Fuscus the Vacant Colossus",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "聖"
+    ],
+    "statusWeakness": []
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 6,
+    "nickname": "マンティコア",
+    "name": "ピアーズ・ザ・ローグ・マンティコア",
+    "englishName": "Pierce the Rogue Manticore",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "水"
+    ],
+    "statusWeakness": []
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 7,
+    "nickname": "トロール",
+    "name": "トール・ザ・アノーイング・トロール",
+    "englishName": "Thor the Annoying Troll",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "聖",
+      "闇"
+    ],
+    "statusWeakness": []
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 8,
+    "nickname": "ウィッチ",
+    "name": "エンヴィ・ザ・ウィッチ",
+    "englishName": "Envy the Witch",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "聖"
+    ],
+    "statusWeakness": []
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 9,
+    "nickname": "フォールンエルフ",
+    "name": "デモニック・ザ・フォールン・エルフ",
+    "englishName": "Demonic the Fallen Elven",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "聖",
+      "闇"
+    ],
+    "statusWeakness": []
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 10,
+    "nickname": "カガチ",
+    "name": "カガチ・ザ・サムライロード",
+    "englishName": "Kagachi the Samurai Lord",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "聖",
+      "闇"
+    ],
+    "statusWeakness": []
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 11,
+    "nickname": "グリフィン",
+    "name": "ザ・ストームグリフィン",
+    "englishName": "The Storm Griffin",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "土"
+    ],
+    "statusWeakness": []
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 12,
+    "nickname": "ハーミット",
+    "name": "ザ・ストリクトハーミット",
+    "englishName": "The Strict Hermit",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "突",
+      "斬",
+      "聖",
+      "闇"
+    ],
+    "phaseWeaknesses": [
+      [
+        "打"
+      ],
+      [
+        "突"
+      ],
+      [
+        "斬"
+      ]
+    ],
+    "statusWeakness": []
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 13,
+    "nickname": "アラズ",
+    "name": "アラズ・ザ・ブレイズシューター",
+    "englishName": "Alaz The Blaze Shooter",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "水"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Integral"
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 14,
+    "nickname": "セントール",
+    "name": "フォルス・ザ・セントール・チーフテン",
+    "englishName": "Pholus the Centaur Chieftain",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "聖",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Integral",
+    "coreMetalDrop": "Yes, Core Metal"
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 20,
+    "nickname": "ワンアイド",
+    "name": "ザ・ワンアイド・ビースト",
+    "englishName": "The One-Eyed Beast",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "火"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Integral"
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 25,
+    "nickname": "アスラ",
+    "name": "アスラ・ザ・エクスキューショナー",
+    "englishName": "Asura the Executioner",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "火"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Nox"
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 27,
+    "nickname": "ダロス",
+    "name": "ダロス・ザ・クロスギガス",
+    "englishName": "Dallos the Crossgigas",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "風"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Nox"
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 35,
+    "nickname": "スティーグ",
+    "name": "スティーグ・ザ・スティッキーシング",
+    "englishName": "Stig the Sticky Thing",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "聖"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Nox"
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 40,
+    "nickname": "ブラッケン",
+    "name": "ブラッケン・ザ・プリズンワーデン",
+    "englishName": "Bracken the Prison Warden",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "土"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Lux"
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 47,
+    "nickname": "レイア",
+    "name": "レイア・ザ・レギオンバタフライ",
+    "englishName": "Leia the Legion Butterfly",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "水"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Lux"
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 50,
+    "nickname": "ラストナンバー",
+    "name": "ザ・ラストナンバー",
+    "englishName": "The Last Number",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Lux"
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 61,
+    "nickname": "ナーシャ",
+    "name": "ナーシャ・ザ・ナインライフスネイク",
+    "englishName": "Nasya the Nine-Life Snake",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "風"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Rosso"
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 74,
+    "nickname": "グリームアイズ",
+    "name": "ザ・グリームアイズ",
+    "englishName": "The Gleam Eyes",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "聖"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Rosso"
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 75,
+    "nickname": "スカルリーパー",
+    "name": "ザ・スカルリーパー",
+    "englishName": "The Skull Reaper",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "火"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "None",
+    "coreMetalDrop": "Yes, Core Metal+++"
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 81,
+    "nickname": "ラングレン",
+    "name": "ラングレン・ザ・ランデヴァウアラー",
+    "englishName": "Lundgren the Land Devourer",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "水"
+    ],
+    "statusWeakness": [
+      "毒",
+      "凍傷",
+      "火傷",
+      "出血"
+    ],
+    "integralSeries": "Rosso",
+    "coreMetalDrop": "No"
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 85,
+    "nickname": "ホワン",
+    "name": "ホワン・ザ・ハンドレッドアームズ",
+    "englishName": "Huang the Hundred Arms",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "火"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Yasha",
+    "coreMetalDrop": "No"
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 91,
+    "nickname": "カオスドレイク",
+    "name": "ドルゼル・ザ・カオスドレイク",
+    "englishName": "Dorz’l the Chaos Drake",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "聖"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Yasha"
+  },
+  {
+    "chapter": 1,
+    "location": "labyrinth",
+    "floor": 100,
+    "nickname": "ラディウス",
+    "name": "アン・インカーネイト・オブ・ザ・ラディウス",
+    "englishName": "An Incarnate of the Radius",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "火"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Yasha"
+  },
+  {
+    "chapter": 2,
+    "location": "labyrinth",
+    "floor": 16,
+    "nickname": "The Strike Hermit",
+    "name": "The Strike Hermit",
+    "englishName": "The Strike Hermit",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "火"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Lava"
+  },
+  {
+    "chapter": 2,
+    "location": "labyrinth",
+    "floor": 17,
+    "nickname": "ウィクス",
+    "name": "ウィクス・ジ・エクストリームウィルム",
+    "englishName": "Wex the Extreme Wyrm",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "聖"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Machina"
+  },
+  {
+    "chapter": 2,
+    "location": "labyrinth",
+    "floor": 19,
+    "nickname": "オディ",
+    "name": "オディ・ジ・オプティマイズドシング",
+    "englishName": "Oddie the Optimized Thing",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Gale"
+  },
+  {
+    "chapter": 2,
+    "location": "labyrinth",
+    "floor": 23,
+    "nickname": "ザ・ブラッディーアイズ",
+    "name": "ザ・ブラッディーアイズ",
+    "englishName": "The Bloody Eyes",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "水"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Gale"
+  },
+  {
+    "chapter": 2,
+    "location": "labyrinth",
+    "floor": 24,
+    "nickname": "ブルグ",
+    "name": "ブルグ・ザ・ブルータルブランチャー",
+    "englishName": "Brug the Brutal Brancher",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "土"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Rex"
+  },
+  {
+    "chapter": 2,
+    "location": "labyrinth",
+    "floor": 31,
+    "nickname": "ナルハ",
+    "name": "ナルハ・ザ・ナインテイルス",
+    "englishName": "Naruha the Nine-tailed",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "水"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Gaou",
+    "coreMetalDrop": "No"
+  },
+  {
+    "chapter": 2,
+    "location": "labyrinth",
+    "floor": 33,
+    "nickname": "エラク",
+    "name": "エラク・ジ・エリミネーター",
+    "englishName": "Erak the Eliminator",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "土"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Gale"
+  },
+  {
+    "chapter": 2,
+    "location": "labyrinth",
+    "floor": 44,
+    "nickname": "ケルブ",
+    "name": "アン・インビクタス・オブ・ザ・ケルブ",
+    "englishName": "An Invictus of the Cherub",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "風"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Rex"
+  },
+  {
+    "chapter": 2,
+    "location": "labyrinth",
+    "floor": 51,
+    "nickname": "メタルリーパー",
+    "name": "ザ・メタルリーパー",
+    "englishName": "The Metal Reaper",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "土"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Machina"
+  },
+  {
+    "chapter": 2,
+    "location": "labyrinth",
+    "floor": 65,
+    "nickname": "Jack the Jackass Jock",
+    "name": "Jack the Jackass Jock",
+    "englishName": "Jack the Jackass Jock",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "聖"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Lava"
+  },
+  {
+    "chapter": 2,
+    "location": "labyrinth",
+    "floor": 69,
+    "nickname": "アダマススネイク",
+    "name": "アルファルド・ジ・アダマススネイク",
+    "englishName": "Alphard the Adamas Snake",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Machina"
+  },
+  {
+    "chapter": 2,
+    "location": "labyrinth",
+    "floor": 79,
+    "nickname": "オクタ",
+    "name": "オクタ・ジ・オーバーマンデイン",
+    "englishName": "Octa the Overseer",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Gaou"
+  },
+  {
+    "chapter": 2,
+    "location": "labyrinth",
+    "floor": 83,
+    "nickname": "テオ",
+    "name": "テオ・ザ・ティーザーテンタコルズ",
+    "englishName": "Teo the Teaser Tentacles",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "風"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Gaou"
+  },
+  {
+    "chapter": 2,
+    "location": "labyrinth",
+    "floor": 89,
+    "nickname": "Notte the Magna Arcana",
+    "name": "Notte the Magna Arcana",
+    "englishName": "Notte the Magna Arcana",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "水"
+    ],
+    "statusWeakness": [],
+    "integralSeries": "Rex"
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 3,
+    "nickname": "Nephila Regina",
+    "name": "Nephila Regina",
+    "englishName": "Nephila Regina",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "風",
+      "火"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "大蜘蛛のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": "percent",
+        "damage": null,
+        "weaponTypes": [],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "経験値獲得量が20.6%上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon3.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 4,
+    "nickname": "Magnatherium",
+    "name": "Magnatherium",
+    "englishName": "Magnatherium",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "土"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "暴君熊のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "フィールド上の回復オブジェクト破壊による自然回復時間の20.6％延長、フィールド上の回復オブジェクト破壊による自然回復量の25％低下を含むアイテム。※重複不可 ※パートナー無効",
+      "notes": [
+        "重複不可",
+        "パートナー無効"
+      ],
+      "confidence": 0.9,
+      "sourceImage": "dungeon4.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 5,
+    "nickname": "Vacuous Monarch",
+    "name": "Vacuous Monarch",
+    "englishName": "Vacuous Monarch",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "聖"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "虚空王のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": "percent",
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "片手細剣"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "片手細剣の熟練度経験値獲得量が20.6%上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+      "notes": [
+        "重複不可",
+        "パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon5.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 6,
+    "nickname": "Mad Claw Scorpion",
+    "name": "Mad Claw Scorpion",
+    "englishName": "Mad Claw Scorpion",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "水"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "狂爪蠍のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": "percent",
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "片手棍"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "片手棍の熟練度経験値獲得量が20.6%上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon6.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 7,
+    "nickname": "Blood Chain Fenrir",
+    "name": "Blood Chain Fenrir",
+    "englishName": "Blood Chain Fenrir",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "聖",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "血鎖狼のインゴット",
+      "filters": {
+        "col": "percent",
+        "proficiency": null,
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "Col獲得量が20.6%上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon7.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 8,
+    "nickname": "Blast Black Cat",
+    "name": "Blast Black Cat",
+    "englishName": "Blast Black Cat",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "聖"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "玄猫のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "フィールド上の回復オブジェクト破壊による自然回復量が20.6%上昇 ※重複不可 ※パートナー無効 フィールド上の回復オブジェクト破壊による自然回復時間が25%減少",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon8.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 9,
+    "nickname": "Venom Cockatrice",
+    "name": "Venom Cockatrice",
+    "englishName": "Venom Cockatrice",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "聖",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "毒怪鳥のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": "percent",
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "弓"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "弓の熟練度経験値獲得量が20.6%上昇",
+      "notes": [],
+      "confidence": "high",
+      "sourceImage": "dungeon9.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 10,
+    "nickname": "Rapid Stream Kada",
+    "name": "Rapid Stream Kada",
+    "englishName": "Rapid Stream Kada",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "聖",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "苛蛇のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": "percent",
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "両手斧"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "両手斧の熟練度経験値獲得量が20.6%上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon10.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 11,
+    "nickname": "Zehghi the Flame Caller",
+    "name": "Zehghi the Flame Caller",
+    "englishName": "Zehghi the Flame Caller",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "土"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "炎巨人のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": "percent",
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "両手槍"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "両手槍の熟練度経験値獲得量が20.6%上昇 最大HPが25%低下",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1,
+      "sourceImage": "dungeon11.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 12,
+    "nickname": "Captain Demon Sword",
+    "name": "Captain Demon Sword",
+    "englishName": "Captain Demon Sword",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "聖",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "魔船長のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": "percent",
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "短剣"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "短剣の熟練度経験値獲得量が20.6%上昇",
+      "notes": [
+        "重複不可",
+        "パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon12.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 13,
+    "nickname": "Flame Lizard Warrior",
+    "name": "Flame Lizard Warrior",
+    "englishName": "Flame Lizard Warrior",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "水"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "炎蜥士のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": "percent",
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "盾"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "盾の熟練度経験値獲得量が20.6%上昇",
+      "notes": [
+        "{\"note_type\": \"restriction\", \"content\": \"重複不可\"}",
+        "{\"note_type\": \"restriction\", \"content\": \"パートナー無効\"}"
+      ],
+      "confidence": 0.9,
+      "sourceImage": "dungeon13.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 14,
+    "nickname": "Scatter Elder Mush",
+    "name": "Scatter Elder Mush",
+    "englishName": "Scatter Elder Mush",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "聖",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "長老茸のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": "percent",
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "片手直剣"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "片手直剣の熟練度経験値獲得量が20.6%上昇",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon14.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 20,
+    "nickname": "Blueite Golem",
+    "name": "Blueite Golem",
+    "englishName": "Blueite Golem",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "火"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "輝蒼岩のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": "fixed",
+        "damage": null,
+        "weaponTypes": [],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "経験値獲得量が10上昇 ※重複不可",
+      "notes": [
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon20.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 25,
+    "nickname": "Phantom Furniture",
+    "name": "Phantom Furniture",
+    "englishName": "Phantom Furniture",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "火"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "怪奇楼のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": "fixed",
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "両手斧"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "Select Item",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon25.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 27,
+    "nickname": "Glitter Harpy",
+    "name": "Glitter Harpy",
+    "englishName": "Glitter Harpy",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "風"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "煌鳥人のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": "fixed",
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "両手槍"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "両手槍の熟練度経験値獲得量が2上昇 ※重複不可 ※パートナー無効 最大HPが50%低下",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon27.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 35,
+    "nickname": "Omnivorous Chimera",
+    "name": "Omnivorous Chimera",
+    "englishName": "Omnivorous Chimera",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "聖"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "合成獣のインゴット",
+      "filters": {
+        "col": "fixed",
+        "proficiency": null,
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "Col獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが50%低下",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon35.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 40,
+    "nickname": "Feral Warder Chief",
+    "name": "Feral Warder Chief",
+    "englishName": "Feral Warder Chief",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "土"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "悪魔長のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": "fixed",
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "弓"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "弓の熟練度経験値獲得量が2上昇 ※重複不可 ※パートナー無効 最大HPが50%低下",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon40.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 47,
+    "nickname": "Garden Tarantula",
+    "name": "Garden Tarantula",
+    "englishName": "Garden Tarantula",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "水"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "園蜘蛛のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": "fixed",
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "片手棍"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "片手棍の熟練度経験値獲得量が2上昇 ※重複不可",
+      "notes": [
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon47.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 48,
+    "nickname": "Vortex Seahorse",
+    "name": "Vortex Seahorse",
+    "englishName": "Vortex Seahorse",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "聖"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "森林馬のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": null,
+        "damage": "critical",
+        "weaponTypes": [],
+        "weaponWeaknesses": [
+          "打"
+        ],
+        "attributes": []
+      },
+      "rawText": "打属性スチルのクリティカルダメージが5.2%上昇 ※重複不可 打属性以外のダメージが50%低下",
+      "notes": [
+        "※重複不可"
+      ],
+      "confidence": 100,
+      "sourceImage": "dungeon48.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 50,
+    "nickname": "Blueite Golem 00",
+    "name": "Blueite Golem 00",
+    "englishName": "Blueite Golem 00",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "双零岩のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": "fixed",
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "盾"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "盾の熟練度経験値獲得量が2上昇 ※重複不可 ※パートナー無効 最大HPが50%低下",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": "high",
+      "sourceImage": "dungeon50.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 55,
+    "nickname": "X'rphan the White Wyrm",
+    "name": "X'rphan the White Wyrm",
+    "englishName": "X'rphan the White Wyrm",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "火"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "白龍のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": null,
+        "damage": "critical",
+        "weaponTypes": [],
+        "weaponWeaknesses": [],
+        "attributes": [
+          "火"
+        ]
+      },
+      "rawText": "火属性スキルのクリティカルダメージが5.2％上昇 ※重複不可 火属性以外のダメージが50％低下",
+      "notes": [
+        "※重複不可"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon55.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 61,
+    "nickname": "Margaret the Naughty Mermaid",
+    "name": "Margaret the Naughty Mermaid",
+    "englishName": "Margaret the Naughty Mermaid",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "風"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "人魚のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": "fixed",
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "片手細剣"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "片手細剣の熟練度経験値獲得量が2上昇",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon61.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 68,
+    "nickname": "Relentless Ravager",
+    "name": "Relentless Ravager",
+    "englishName": "Relentless Ravager",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "土"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "水洞亀のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "",
+      "notes": [
+        "※重複不可"
+      ],
+      "confidence": 1,
+      "sourceImage": "dungeon68.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 75,
+    "nickname": "Grazzo the Grand Champ",
+    "name": "Grazzo the Grand Champ",
+    "englishName": "Grazzo the Grand Champ",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "火"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "剣闘王のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": "fixed",
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "短剣"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "短剣の熟練度経験値獲得量が2上昇 ※重複不可 ※パートナー無効 最大HPが50%低下",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon75.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 77,
+    "nickname": "Rafe the Wreckingman",
+    "name": "Rafe the Wreckingman",
+    "englishName": "Rafe the Wreckingman",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "炎痕のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": null,
+        "damage": "critical",
+        "weaponTypes": [],
+        "weaponWeaknesses": [],
+        "attributes": [
+          "闇"
+        ]
+      },
+      "rawText": "闇属性スキルのクリティカルダメージが5.2%上昇 ※重複不可 闇属性以外のダメージが50%低下",
+      "notes": [
+        "※重複不可"
+      ],
+      "confidence": 1,
+      "sourceImage": "dungeon77.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 81,
+    "nickname": "Durun the Millennial Wolf",
+    "name": "Durun the Millennial Wolf",
+    "englishName": "Durun the Millennial Wolf",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "水"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "狼王のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": "fixed",
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "片手直剣"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "片手直剣の熟練度経験値獲得量が2上昇",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1,
+      "sourceImage": "dungeon81.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 85,
+    "nickname": "Shengxing the Sacred Beast",
+    "name": "Shengxing the Sacred Beast",
+    "englishName": "Shengxing the Sacred Beast",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "火"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "聖星獣のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": "percent",
+        "damage": null,
+        "weaponTypes": [],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "経験値獲得量が26%上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 100,
+      "sourceImage": "dungeon85.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 87,
+    "nickname": "Mateo the Mounting Macaque",
+    "name": "Mateo the Mounting Macaque",
+    "englishName": "Mateo the Mounting Macaque",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "土"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "格付猿のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": null,
+        "damage": "critical",
+        "weaponTypes": [],
+        "weaponWeaknesses": [],
+        "attributes": [
+          "水"
+        ]
+      },
+      "rawText": "水属性スキルのクリティカルダメージが5.2%上昇 ※重複不可 水属性以外のダメージが50%低下",
+      "notes": [
+        "※重複不可"
+      ],
+      "confidence": 1,
+      "sourceImage": "dungeon87.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 91,
+    "nickname": "Knight Soul",
+    "name": "Knight Soul",
+    "englishName": "Knight Soul",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "聖"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "騎士魂のインゴット",
+      "filters": {
+        "col": "percent",
+        "proficiency": null,
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "Col獲得量が26%上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon91.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 94,
+    "nickname": "Dominant Cogitat",
+    "name": "Dominant Cogitat",
+    "englishName": "Dominant Cogitat",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "剛成獣のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": null,
+        "damage": "critical",
+        "weaponTypes": [],
+        "weaponWeaknesses": [
+          "突"
+        ],
+        "attributes": []
+      },
+      "rawText": "突属性スキルのクリティカルダメージが5.2%上昇 ※重複不可 突属性以外のダメージが50%低下",
+      "notes": [
+        "※重複不可"
+      ],
+      "confidence": "high",
+      "sourceImage": "dungeon94.png"
+    }
+  },
+  {
+    "chapter": 1,
+    "location": "dungeon",
+    "floor": 99,
+    "nickname": "Derek the Discipline Dragoon",
+    "name": "Derek the Discipline Dragoon",
+    "englishName": "Derek the Discipline Dragoon",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "風"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "竜騎士のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": null,
+        "damage": "critical",
+        "weaponTypes": [],
+        "weaponWeaknesses": [],
+        "attributes": [
+          "風"
+        ]
+      },
+      "rawText": "風属性スキルのクリティカルダメージが5.2%上昇 ※重複不可 風属性以外のダメージが50%低下",
+      "notes": [
+        "※重複不可"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon99.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 16,
+    "nickname": "Dozuchi the Ley Liner",
+    "name": "Dozuchi the Ley Liner",
+    "englishName": "Dozuchi the Ley Liner",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "火"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "土蝕のインゴット",
+      "filters": {
+        "col": "fixed",
+        "proficiency": null,
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "片手細剣"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "片手細剣装備時のCol獲得量が10上昇",
+      "notes": [
+        "重複不可",
+        "パートナー無効"
+      ],
+      "confidence": 99,
+      "sourceImage": "dungeon16.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 17,
+    "nickname": "Tarkus the Tyrant Tusk",
+    "name": "Tarkus the Tyrant Tusk",
+    "englishName": "Tarkus the Tyrant Tusk",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "聖"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "暴帝竜のインゴット",
+      "filters": {
+        "col": "fixed",
+        "proficiency": null,
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "両手槍"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "両手槍装備時のCol獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon17.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 19,
+    "nickname": "Eddie the Embedded Beast",
+    "name": "Eddie the Embedded Beast",
+    "englishName": "Eddie the Embedded Beast",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "魔界獣のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": "fixed",
+        "damage": null,
+        "weaponTypes": [
+          "両手槍"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "両手槍装備時の経験値獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon19.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 23,
+    "nickname": "Tsubaki the Blade Maiden",
+    "name": "Tsubaki the Blade Maiden",
+    "englishName": "Tsubaki the Blade Maiden",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "水"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "鎧鬼姫のインゴット",
+      "filters": {
+        "col": "fixed",
+        "proficiency": null,
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "弓"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "弓装備時のCol獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 0.95,
+      "sourceImage": "dungeon23.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 24,
+    "nickname": "Phad the Dragonian Pugilist",
+    "name": "Phad the Dragonian Pugilist",
+    "englishName": "Phad the Dragonian Pugilist",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "土"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "竜拳士のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": "fixed",
+        "damage": null,
+        "weaponTypes": [
+          "弓"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "弓装備時の経験値獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1,
+      "sourceImage": "dungeon24.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 26,
+    "nickname": "Utsuroubou the Pretender",
+    "name": "Utsuroubou the Pretender",
+    "englishName": "Utsuroubou the Pretender",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "空弾のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": null,
+        "damage": "nonCritical",
+        "weaponTypes": [],
+        "weaponWeaknesses": [],
+        "attributes": [
+          "闇"
+        ]
+      },
+      "rawText": "毒状態の敵に対して攻撃時、闇属性のダメージが1.18%上昇 ※重複不可 毒状態の敵以外へのダメージが50%低下",
+      "notes": [
+        "※重複不可"
+      ],
+      "confidence": 1,
+      "sourceImage": "dungeon26.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 31,
+    "nickname": "Dagan the Ogrian Chief",
+    "name": "Dagan the Ogrian Chief",
+    "englishName": "Dagan the Ogrian Chief",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "水"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "賊鬼頭のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": "fixed",
+        "damage": null,
+        "weaponTypes": [
+          "片手細剣"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "片手細剣装備時の経験値獲得量が10上昇",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon31.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 33,
+    "nickname": "Van the Vermilion Griffin",
+    "name": "Van the Vermilion Griffin",
+    "englishName": "Van the Vermilion Griffin",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "土"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "朱鷲獣のインゴット",
+      "filters": {
+        "col": "fixed",
+        "proficiency": null,
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "短剣"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "短剣装備時のCol獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon33.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 38,
+    "nickname": "Invi the Propinquus Nocte",
+    "name": "Invi the Propinquus Nocte",
+    "englishName": "Invi the Propinquus Nocte",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "水"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "吸血貴のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": null,
+        "damage": "nonCritical",
+        "weaponTypes": [],
+        "weaponWeaknesses": [],
+        "attributes": [
+          "水"
+        ]
+      },
+      "rawText": "氷傷状態の敵に対して攻撃時、水属性のダメージが1.18%上昇 ※重複不可 冰傷状態の敵以外へのダメージが50%低下",
+      "notes": [
+        "※重複不可"
+      ],
+      "confidence": 99.5,
+      "sourceImage": "dungeon38.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 42,
+    "nickname": "Plasterer Hermit",
+    "name": "Plasterer Hermit",
+    "englishName": "Plasterer Hermit",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "火"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "藍繡殻のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": null,
+        "damage": "nonCritical",
+        "weaponTypes": [],
+        "weaponWeaknesses": [],
+        "attributes": [
+          "火"
+        ]
+      },
+      "rawText": "火傷状態の敵に対して攻撃時、火属性のダメージが1.18%上昇 ※重複不可 火傷状態の敵以外へのダメージが50%低下",
+      "notes": [
+        "※重複不可"
+      ],
+      "confidence": 100,
+      "sourceImage": "dungeon42.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 44,
+    "nickname": "Stratos the St. Centaur",
+    "name": "Stratos the St. Centaur",
+    "englishName": "Stratos the St. Centaur",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "風"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "聖人馬のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": "fixed",
+        "damage": null,
+        "weaponTypes": [
+          "片手棍"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "片手棍装備時の経験値獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+      "notes": [
+        "重複不可",
+        "パートナー無効"
+      ],
+      "confidence": 99,
+      "sourceImage": "dungeon44.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 51,
+    "nickname": "Merric the Magichrome Morpho",
+    "name": "Merric the Magichrome Morpho",
+    "englishName": "Merric the Magichrome Morpho",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "土"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "粒翅蝶のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": "fixed",
+        "damage": null,
+        "weaponTypes": [
+          "両手斧"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "両手斧装備時の経験値獲得量が10上昇",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 0.9,
+      "sourceImage": "dungeon51.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 56,
+    "nickname": "Valt the Violent Violet",
+    "name": "Valt the Violent Violet",
+    "englishName": "Valt the Violent Violet",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "土"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "紫怨鬼のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": null,
+        "damage": "critical",
+        "weaponTypes": [],
+        "weaponWeaknesses": [
+          "斬"
+        ],
+        "attributes": []
+      },
+      "rawText": "斬属性スキルのクリティカルダメージが5.2%上昇 ※重複不可 斬属性以外のダメージが50%低下",
+      "notes": [
+        "* 重複不可"
+      ],
+      "confidence": "high",
+      "sourceImage": "dungeon56.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 58,
+    "nickname": "Lauda the Lancer Whale",
+    "name": "Lauda the Lancer Whale",
+    "englishName": "Lauda the Lancer Whale",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "槍騎鯨のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": null,
+        "damage": "nonCritical",
+        "weaponTypes": [],
+        "weaponWeaknesses": [],
+        "attributes": [
+          "風"
+        ]
+      },
+      "rawText": "",
+      "notes": [
+        "※重複不可"
+      ],
+      "confidence": 1,
+      "sourceImage": "dungeon58.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 63,
+    "nickname": "Cor'rua the Cold Gorgon",
+    "name": "Cor'rua the Cold Gorgon",
+    "englishName": "Cor'rua the Cold Gorgon",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "凍蛇妃のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": null,
+        "damage": "critical",
+        "weaponTypes": [],
+        "weaponWeaknesses": [],
+        "attributes": [
+          "聖"
+        ]
+      },
+      "rawText": "聖属性スキルのクリティカルダメージが5.2%上昇 ※重複不可 聖属性以外のダメージが50%低下",
+      "notes": [
+        "※重複不可"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon63.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 65,
+    "nickname": "Dino the Dracoag Boss",
+    "name": "Dino the Dracoag Boss",
+    "englishName": "Dino the Dracoag Boss",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "聖"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "犯罪王のインゴット",
+      "filters": {
+        "col": "fixed",
+        "proficiency": null,
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "両手斧"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "両手斧装備時のCol獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon65.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 69,
+    "nickname": "Inas the Adamasadderian Queen",
+    "name": "Inas the Adamasadderian Queen",
+    "englishName": "Inas the Adamasadderian Queen",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "蛇人王のインゴット",
+      "filters": {
+        "col": "fixed",
+        "proficiency": null,
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "片手直剣"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "片手直剣装備時のCol獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+      "notes": [
+        "无法重复使用",
+        "对伙伴无效"
+      ],
+      "confidence": 0.95,
+      "sourceImage": "dungeon69.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 72,
+    "nickname": "Walad the Wormy Puppeteer",
+    "name": "Walad the Wormy Puppeteer",
+    "englishName": "Walad the Wormy Puppeteer",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "聖"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "蟲術士のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": null,
+        "damage": "nonCritical",
+        "weaponTypes": [],
+        "weaponWeaknesses": [],
+        "attributes": [
+          "聖"
+        ]
+      },
+      "rawText": "出血状態の敵に対して攻撃時、聖属性のダメージが1.18%上昇 ※重複不可 出血状態の敵以外へのダメージが50%低下",
+      "notes": [
+        "※重複不可"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon72.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 79,
+    "nickname": "Scad the Squeezer",
+    "name": "Scad the Squeezer",
+    "englishName": "Scad the Squeezer",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "牛巨人のインゴット",
+      "filters": {
+        "col": "fixed",
+        "proficiency": null,
+        "experience": null,
+        "damage": null,
+        "weaponTypes": [
+          "片手棍"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "片手棍装備時のCol獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon79.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 83,
+    "nickname": "Calor, the First Admiral",
+    "name": "Calor, the First Admiral",
+    "englishName": "Calor, the First Admiral",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "風"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "船団祖のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": "fixed",
+        "damage": null,
+        "weaponTypes": [
+          "短剣"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "短剣装備時の経験値獲得量が10上昇 ※重複不可 ※パートナー無効 最大HPが25%低下",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 100,
+      "sourceImage": "dungeon83.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 89,
+    "nickname": "LdRd the Party Animal",
+    "name": "LdRd the Party Animal",
+    "englishName": "LdRd the Party Animal",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "水"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "乱痴猿のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": "fixed",
+        "damage": null,
+        "weaponTypes": [
+          "片手直剣"
+        ],
+        "weaponWeaknesses": [],
+        "attributes": []
+      },
+      "rawText": "片手直剣装備時の経験値獲得量が10上昇",
+      "notes": [
+        "※重複不可",
+        "※パートナー無効"
+      ],
+      "confidence": 1.0,
+      "sourceImage": "dungeon89.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 92,
+    "nickname": "Leonhard the Beasted Lord",
+    "name": "Leonhard the Beasted Lord",
+    "englishName": "Leonhard the Beasted Lord",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "土"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "獣拝王のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": null,
+        "damage": "nonCritical",
+        "weaponTypes": [],
+        "weaponWeaknesses": [],
+        "attributes": [
+          "土"
+        ]
+      },
+      "rawText": "氷傷状態の敵に対して攻撃時、土属性のダメージが1.18%上昇 ※重複不可 冰傷状態の敵以外へのダメージが50%低下",
+      "notes": [
+        "重複不可"
+      ],
+      "confidence": 1,
+      "sourceImage": "dungeon92.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "location": "dungeon",
+    "floor": 96,
+    "nickname": "Yuniy the United Unicorns",
+    "name": "Yuniy the United Unicorns",
+    "englishName": "Yuniy the United Unicorns",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "聖"
+    ],
+    "statusWeakness": [],
+    "ingot": {
+      "name": "連身獣のインゴット",
+      "filters": {
+        "col": null,
+        "proficiency": null,
+        "experience": null,
+        "damage": "nonCritical",
+        "weaponTypes": [],
+        "weaponWeaknesses": [],
+        "attributes": [
+          "土"
+        ]
+      },
+      "rawText": "毒状態の敵に対して攻撃時、土属性のダメージが1.18%上昇 ※重複不可 毒状態の敵以外へのダメージが50%低下",
+      "notes": [
+        "※重複不可"
+      ],
+      "confidence": 100,
+      "sourceImage": "dungeon96.png"
+    }
+  },
+  {
+    "location": "undergroundLabyrinth",
+    "floor": "B1F",
+    "nickname": "Brave Harbinger",
+    "name": "Brave Harbinger",
+    "englishName": "Brave Harbinger",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "火"
+    ],
+    "statusWeakness": [],
+    "integralSeriesShield": "None"
+  },
+  {
+    "location": "undergroundLabyrinth",
+    "floor": "B2F",
+    "nickname": "Bennu: Venom Cockatrice",
+    "name": "Bennu: Venom Cockatrice",
+    "englishName": "Bennu: Venom Cockatrice",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "風"
+    ],
+    "statusWeakness": [],
+    "integralSeriesShield": "Fermat"
+  },
+  {
+    "location": "undergroundLabyrinth",
+    "floor": "B3F",
+    "nickname": "Kenneth: Crimson Kobold Lord",
+    "name": "Kenneth: Crimson Kobold Lord",
+    "englishName": "Kenneth: Crimson Kobold Lord",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "水"
+    ],
+    "statusWeakness": []
+  },
+  {
+    "location": "undergroundLabyrinth",
+    "floor": "B4F",
+    "nickname": "Caz: Cannibal Manticore",
+    "name": "Caz: Cannibal Manticore",
+    "englishName": "Caz: Cannibal Manticore",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "土"
+    ],
+    "statusWeakness": []
+  },
+  {
+    "location": "undergroundLabyrinth",
+    "floor": "B5F",
+    "nickname": "Stacy: Spit Spider",
+    "name": "Stacy: Spit Spider",
+    "englishName": "Stacy: Spit Spider",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "火"
+    ],
+    "statusWeakness": [],
+    "integralSeriesShield": "Nox Fermat"
+  },
+  {
+    "location": "undergroundLabyrinth",
+    "floor": "B6F",
+    "nickname": "Chloro: Chloride Blazer",
+    "name": "Chloro: Chloride Blazer",
+    "englishName": "Chloro: Chloride Blazer",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "水"
+    ],
+    "statusWeakness": []
+  },
+  {
+    "location": "undergroundLabyrinth",
+    "floor": "B7F",
+    "nickname": "Eckard: Rotsehen Augen",
+    "name": "Eckard: Rotsehen Augen",
+    "englishName": "Eckard: Rotsehen Augen",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "闇"
+    ],
+    "statusWeakness": []
+  },
+  {
+    "location": "undergroundLabyrinth",
+    "floor": "B8F",
+    "nickname": "Greta: Martial Witch",
+    "name": "Greta: Martial Witch",
+    "englishName": "Greta: Martial Witch",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "水"
+    ],
+    "statusWeakness": [],
+    "integralSeriesShield": "Gauss"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 90,
+    "nickname": "冥黒狗王",
+    "name": "冥黒狗王",
+    "englishName": "Dark Black King",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Crimson",
+    "partyAvailable": true
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 90,
+    "nickname": "冥黒雷牛",
+    "name": "冥黒雷牛",
+    "englishName": "Dark Black Thunder Bull",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "風"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Crimson",
+    "partyAvailable": true
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 90,
+    "nickname": "冥黒霊樹",
+    "name": "冥黒霊樹",
+    "englishName": "Dark Black Spirit Tree",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "火"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Crimson",
+    "partyAvailable": true
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 95,
+    "nickname": "冥黒海馬",
+    "name": "冥黒海馬",
+    "englishName": "Dark Black Sea Horse",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "土"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Amber"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 95,
+    "nickname": "冥黒虚像",
+    "name": "冥黒虚像",
+    "englishName": "Dark Black False Statue",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "火"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Amber"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 95,
+    "nickname": "冥黒喰獣",
+    "name": "冥黒喰獣",
+    "englishName": "Dark Black Beast",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "水"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Amber"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 110,
+    "nickname": "冥黒巨人",
+    "name": "冥黒巨人",
+    "englishName": "Dark Black Colossal",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "聖"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Topaz"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 110,
+    "nickname": "冥黒凍魔",
+    "name": "冥黒凍魔",
+    "englishName": "Dark Black Frozen Evil",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Topaz"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 110,
+    "nickname": "冥黒堕精霊",
+    "name": "冥黒堕精霊",
+    "englishName": "Dark Black Evil Spirit",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "土"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Topaz"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 135,
+    "nickname": "冥黒蛇武者",
+    "name": "冥黒蛇武者",
+    "englishName": "Dark Black Snake Samurai",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "風"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Emerald"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 135,
+    "nickname": "冥黒鷲獅子",
+    "name": "冥黒鷲獅子",
+    "englishName": "Dark Black Griffin",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "水"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Emerald"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 135,
+    "nickname": "冥黒砕蟹",
+    "name": "冥黒砕蟹",
+    "englishName": "Dark Black Sturdy Crab",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "突",
+      "聖"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Emerald"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 155,
+    "nickname": "冥黒灼射",
+    "name": "冥黒灼射",
+    "englishName": "Dark Black Blazing",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Sapphire"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 155,
+    "nickname": "冥黒半獣",
+    "name": "冥黒半獣",
+    "englishName": "Dark Black Half Beast",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "土"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Sapphire"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 155,
+    "nickname": "冥黒単眼獣",
+    "name": "冥黒単眼獣",
+    "englishName": "Dark Black One-Eyed Beast",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "火"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Sapphire"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 175,
+    "nickname": "冥黒修羅像",
+    "name": "冥黒修羅像",
+    "englishName": "Dark Black Asura",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "水"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Indigo"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 175,
+    "nickname": "冥黒双躯鬼",
+    "name": "冥黒双躯鬼",
+    "englishName": "Dark Black Crossgigas",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "聖"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Indigo"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 175,
+    "nickname": "冥黒粘菌怪",
+    "name": "冥黒粘菌怪",
+    "englishName": "Dark Black Sticky Thing",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "風"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Indigo"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 195,
+    "nickname": "冥黒牢城主",
+    "name": "冥黒牢城主",
+    "englishName": "Dark Black Warden",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Amethyst"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 195,
+    "nickname": "冥黒群蝶",
+    "name": "冥黒群蝶",
+    "englishName": "Dark Black Butterfly",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "風"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Amethyst"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 195,
+    "nickname": "冥黒機巧像",
+    "name": "冥黒機巧像",
+    "englishName": "Dark Black Last Number",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "土"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Amethyst"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 215,
+    "nickname": "冥黒白竜",
+    "name": "冥黒白竜",
+    "englishName": "Dark Black White Wyrm",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "水"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Quartz"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 215,
+    "nickname": "冥黒大海蛇",
+    "name": "冥黒大海蛇",
+    "englishName": "Dark Black Sea Snake",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "聖"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Quartz"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 215,
+    "nickname": "冥黒青眼魔",
+    "name": "冥黒青眼魔",
+    "englishName": "Dark Black Gleam Eyes",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "火"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Quartz"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 235,
+    "nickname": "冥黒劫貪獣",
+    "name": "冥黒劫貪獣",
+    "englishName": "Dark Black Land Devourer",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "闇"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Rose Quartz",
+    "partyAvailable": false
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 235,
+    "nickname": "冥黒百器帝",
+    "name": "冥黒百器帝",
+    "englishName": "Dark Black Hundred Arms",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "水"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Rose Quartz",
+    "partyAvailable": false
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 235,
+    "nickname": "冥黒混沌竜",
+    "name": "冥黒混沌竜",
+    "englishName": "Dark Black Chaos Drake",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "火"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Rose Quartz",
+    "partyAvailable": false
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 255,
+    "nickname": "冥黒九尾狐",
+    "name": "冥黒九尾狐",
+    "englishName": "Dark Black Nine-tailed Fox",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "火"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Sky"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 255,
+    "nickname": "冥黒八人機",
+    "name": "冥黒八人機",
+    "englishName": "Dark Black Overseer",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "聖"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Sky"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 255,
+    "nickname": "冥黒頭足王",
+    "name": "冥黒頭足王",
+    "englishName": "Dark Black Teaser Tentacles",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "風"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Sky"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 275,
+    "nickname": "冥黒鋼百足",
+    "name": "冥黒鋼百足",
+    "englishName": "Dark Black Metal Reaper",
+    "weaponType": [],
+    "attributeWeakness": [
+      "突",
+      "聖"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Deep Emerald"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 275,
+    "nickname": "冥黒極限竜",
+    "name": "冥黒極限竜",
+    "englishName": "Dark Black Extreme Wyrm",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "風"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Deep Emerald"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 275,
+    "nickname": "冥黒大砂蛇",
+    "name": "冥黒大砂蛇",
+    "englishName": "Dark Black Adamas Snake",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "土"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Deep Emerald"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 295,
+    "nickname": "冥黒赫眼鬼",
+    "name": "冥黒赫眼鬼",
+    "englishName": "Bloody Eyes Chaos",
+    "weaponType": [],
+    "attributeWeakness": [
+      "斬",
+      "土"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Deep Amethyst"
+  },
+  {
+    "location": "chaosShowdown",
+    "level": 295,
+    "nickname": "冥黒族長像",
+    "name": "冥黒族長像",
+    "englishName": "Dark Black Chief's Statue",
+    "weaponType": [],
+    "attributeWeakness": [
+      "打",
+      "水"
+    ],
+    "statusWeakness": [],
+    "crystalSeries": "Deep Amethyst"
+  }
+]
