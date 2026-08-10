@@ -244,6 +244,23 @@ h2 {
   background: var(--header-bg);
 }
 
+.filter-option input:focus-visible + span {
+  outline: 2px solid var(--header-bg);
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .filter-option.icon-filter-option span {
   justify-content: center;
   width: 42px;
@@ -260,23 +277,178 @@ h2 {
   height: 24px;
 }
 
-.filter-note {
-  margin: 15px 0 0;
-  color: var(--text-muted);
-  font-size: 0.75rem;
-  line-height: 1.6;
-}
-
 .ingot-filters {
-  margin-top: 24px;
-  padding-top: 24px;
+  margin-top: 20px;
+  padding-top: 18px;
   border-top: 1px solid var(--border-color);
 }
 
-.ingot-filter-heading h3 {
-  margin: 0;
+.filter-groups.filter-columns {
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.filter-groups.primary-filter-columns {
+  grid-template-columns: 1fr;
+}
+
+.filter-groups.ingot-filter-columns {
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.filter-group.filter-column {
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.filter-column legend {
+  padding: 0 0 8px;
   color: var(--text-dark);
-  font-size: 1rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.filter-column-help {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.filter-column .filter-options {
+  gap: 6px;
+}
+
+.filter-subgroup + .filter-subgroup {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-light);
+}
+
+.filter-column--icons .filter-option.icon-filter-option span {
+  width: 38px;
+  min-height: 38px;
+  padding: 3px;
+}
+
+.filter-column--icons .filter-icon {
+  width: 21px;
+  height: 21px;
+}
+
+.ingot-effect-column,
+.ingot-weapon-types-column {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+}
+
+.ingot-effect-column .filter-options,
+.ingot-weapon-types-column .filter-options {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  max-width: none;
+}
+
+.ingot-effect-column .filter-option,
+.ingot-weapon-types-column .filter-option {
+  flex: 0 0 auto;
+}
+
+.ingot-effect-column .filter-option span {
+  width: auto;
+  min-height: 38px;
+  padding: 3px 5px;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 0.68rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ingot-effect-column .filter-option input[value="percent"] + span,
+#ingotDamageFilters .filter-option input[value="nonCritical"] + span,
+#ingotDamageFilters .filter-option input[value="critical"] + span {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Yu Gothic UI", Meiryo, sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.ingot-effect-column .filter-option.icon-filter-option span {
+  width: 38px;
+  min-height: 38px;
+  padding: 3px;
+}
+
+.ingot-effect-column .filter-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.ingot-weapon-types-column .filter-option.icon-filter-option span {
+  width: 38px;
+  min-height: 38px;
+  padding: 3px;
+}
+
+.ingot-physical-damage-subgroup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.ingot-physical-damage-subgroup .filter-options {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#ingotDamageFilters .filter-option {
+  flex: 0 0 auto;
+}
+
+#ingotDamageFilters .filter-option span {
+  min-height: 34px;
+  padding: 3px 5px;
+  white-space: nowrap;
+}
+
+.ingot-filter-columns .filter-column--icons .filter-options {
+  gap: 5px;
+}
+
+.ingot-filter-columns .filter-column--icons .filter-option.icon-filter-option span {
+  width: 34px;
+  min-height: 34px;
+  padding: 3px;
+}
+
+.ingot-filter-columns .filter-column--icons .filter-icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 360px) {
+  .filter-column--icons .filter-option.icon-filter-option span {
+    width: 32px;
+    min-height: 32px;
+  }
+
+  .filter-column--icons .filter-icon {
+    width: 19px;
+    height: 19px;
+  }
 }
 
 /* ==========================================================================
@@ -648,6 +820,10 @@ h2 {
 
 [data-theme="dark"] .filter-group {
   background: var(--bg-card);
+}
+
+[data-theme="dark"] .filter-group.filter-column {
+  background: transparent;
 }
 
 [data-theme="dark"] .filter-option input:checked + span {

@@ -2,10 +2,9 @@ const WEAPON_TYPES = ["斬", "打", "突"];
 const ATTRIBUTES = ["火", "水", "風", "土", "聖", "闇"];
 const INTEGRAL_SERIES = ["Integral", "Nox", "Lux", "Rosso", "Yasha", "Gaou", "Machina", "Gale", "Rex", "Lava"];
 const CHAOS_LEVELS = ["95", "110", "135", "155", "175", "195", "215", "235", "255", "275", "295"];
-const INGOT_COL_TYPES = ["fixed", "percent"];
-const INGOT_PROFICIENCY_TYPES = ["fixed", "percent"];
-const INGOT_EXPERIENCE_TYPES = ["fixed", "percent"];
-const INGOT_DAMAGE_TYPES = ["critical", "nonCritical"];
+const INGOT_NUMERIC_EFFECT_TYPES = ["col", "experience", "proficiency"];
+const INGOT_VALUE_TYPES = ["fixed", "percent"];
+const INGOT_DAMAGE_TYPES = ["nonCritical", "critical"];
 const INGOT_WEAPON_TYPES = ["片手直剣", "片手細剣", "片手棍", "両手斧", "両手槍", "短剣", "弓", "盾"];
 const LABYRINTH_DETAIL_IMAGES = {
   16: ["16_1.png", "16_2.png"],
@@ -44,6 +43,20 @@ const COMBAT_ICON_FILES = {
   土: "earth.png",
   聖: "holy.png",
   闇: "dark.png",
+  片手直剣: "sword.png",
+  片手細剣: "rapier.png",
+  片手棍: "club.png",
+  両手斧: "axe.png",
+  両手槍: "spear.png",
+  短剣: "dagger.png",
+  弓: "bow.png",
+  盾: "shield.png",
+};
+
+const INGOT_EFFECT_ICON_FILES = {
+  col: "col.png",
+  experience: "exp.png",
+  proficiency: "weaponExp.png",
 };
 
 const weaponLabels = {
@@ -119,8 +132,9 @@ const chaosLevelLabels = {
 const translations = {
   ja: {
     heroCopy: "挑むボスの弱点を選択して、最適な相手を見つけよう。",
-    filterTitle: "弱点から探す",
+    filterTitle: "絞り込み",
     clear: "条件をリセット",
+    weaknessLegend: "武器 / 属性",
     weaponLegend: "武器弱点",
     attributeLegend: "属性弱点",
     multiple: "複数選択可",
@@ -137,8 +151,7 @@ const translations = {
     chaosLevelFilter: "カオスレベル",
     locationLegend: "エリア",
     locationFilter: "エリア",
-    ingotFilterTitle: "入手インゴットで絞り込み",
-    ingotFilterNote: "同じ分類内ではいずれか、異なる分類ではすべての条件に一致するインゴットを持つボスを表示します。",
+    ingotEffectLegend: "効果",
     ingotColLegend: "Col獲得量",
     ingotProficiencyLegend: "熟練度経験値",
     ingotExperienceLegend: "経験値",
@@ -161,8 +174,9 @@ const translations = {
   },
   en: {
     heroCopy: "Select a boss weakness to find the best opponent for your build.",
-    filterTitle: "Find by weakness",
+    filterTitle: "Filters",
     clear: "Clear filters",
+    weaknessLegend: "Weaknesses",
     weaponLegend: "Physical weakness",
     attributeLegend: "Elemental weakness",
     multiple: "Multiple selections allowed",
@@ -179,8 +193,7 @@ const translations = {
     chaosLevelFilter: "Chaos Level",
     locationLegend: "Area",
     locationFilter: "Area",
-    ingotFilterTitle: "Filter by obtainable ingot",
-    ingotFilterNote: "Selections within a group use OR. Selections across different groups must all match the ingot.",
+    ingotEffectLegend: "Effects",
     ingotColLegend: "Col gain",
     ingotProficiencyLegend: "Proficiency EXP",
     ingotExperienceLegend: "Experience",
@@ -208,10 +221,13 @@ const englishAttributeLabels = { 火: "Fire", 水: "Water", 風: "Wind", 土: "E
 
 const ingotFilterLabels = {
   ja: {
+    col: "Col",
+    experience: "EXP",
+    proficiency: "武器EXP",
     fixed: "固定値",
     percent: "%",
-    critical: "クリティカル",
-    nonCritical: "非クリティカル",
+    critical: "CTDMG",
+    nonCritical: "通常DMG",
     "片手直剣": "片手直剣",
     "片手細剣": "片手細剣",
     "片手棍": "片手棍",
@@ -224,10 +240,13 @@ const ingotFilterLabels = {
     ...attributeLabels,
   },
   en: {
+    col: "Col",
+    experience: "EXP",
+    proficiency: "Weapon EXP",
     fixed: "Flat",
     percent: "Percent",
-    critical: "Critical",
-    nonCritical: "Non-critical",
+    critical: "CT DMG",
+    nonCritical: "Normal DMG",
     "片手直剣": "One-handed Sword",
     "片手細剣": "Rapier",
     "片手棍": "One-handed Club",
@@ -266,9 +285,8 @@ const state = {
   selectedSeries: new Set(),
   selectedChaosLevels: new Set(),
   selectedLocations: new Set(),
-  selectedIngotCol: new Set(),
-  selectedIngotProficiency: new Set(),
-  selectedIngotExperience: new Set(),
+  selectedIngotNumericEffects: new Set(),
+  selectedIngotValueTypes: new Set(),
   selectedIngotDamage: new Set(),
   selectedIngotWeaponTypes: new Set(),
   selectedIngotWeaponWeaknesses: new Set(),
@@ -284,9 +302,7 @@ const elements = {
   chaosLevelFilters: document.querySelector("#chaosLevelFilters"),
   locationFilters: document.querySelector("#locationFilters"),
   ingotFiltersSection: document.querySelector("#ingotFiltersSection"),
-  ingotColFilters: document.querySelector("#ingotColFilters"),
-  ingotProficiencyFilters: document.querySelector("#ingotProficiencyFilters"),
-  ingotExperienceFilters: document.querySelector("#ingotExperienceFilters"),
+  ingotEffectFilters: document.querySelector("#ingotEffectFilters"),
   ingotDamageFilters: document.querySelector("#ingotDamageFilters"),
   ingotWeaponTypeFilters: document.querySelector("#ingotWeaponTypeFilters"),
   ingotWeaponWeaknessFilters: document.querySelector("#ingotWeaponWeaknessFilters"),
@@ -354,11 +370,19 @@ function translateInterface() {
 }
 
 function isCombatIconType(type) {
-  return type === "weapon" || type === "attribute" || type === "ingotWeaponWeakness" || type === "ingotAttribute";
+  return type === "weapon" || type === "attribute" || type === "ingotWeaponType" || type === "ingotWeaponWeakness" || type === "ingotAttribute";
 }
 
-function createCombatIcon(value, label, className) {
-  const filename = COMBAT_ICON_FILES[value];
+function getFilterIconFilename(value, type) {
+  return type === "ingotEffect" ? INGOT_EFFECT_ICON_FILES[value] : COMBAT_ICON_FILES[value];
+}
+
+function hasFilterIcon(value, type) {
+  return Boolean(getFilterIconFilename(value, type));
+}
+
+function createFilterIcon(value, label, type, className) {
+  const filename = getFilterIconFilename(value, type);
   if (!filename) return null;
 
   const image = document.createElement("img");
@@ -368,8 +392,12 @@ function createCombatIcon(value, label, className) {
   return image;
 }
 
+function createCombatIcon(value, label, className) {
+  return createFilterIcon(value, label, "combat", className);
+}
+
 function setFilterOptionContent(container, value, labelText, type) {
-  const icon = isCombatIconType(type) && createCombatIcon(value, labelText, "combat-icon filter-icon");
+  const icon = hasFilterIcon(value, type) && createFilterIcon(value, labelText, type, "combat-icon filter-icon");
   container.replaceChildren();
   if (icon) {
     container.classList.add("icon-filter-label");
@@ -407,7 +435,7 @@ function createFilterOptions(container, values, labels, selectionSet, type) {
       ? locationLabels[state.language][value] || value
       : labelsFor(type)[value] || labels[value] || value;
 
-    if (isCombatIconType(type)) {
+    if (hasFilterIcon(value, type)) {
       label.classList.add("icon-filter-option");
     }
     setFilterOptionContent(text, value, labelText, type);
@@ -458,9 +486,8 @@ function normaliseBoss(boss, index) {
 
 function hasActiveIngotFilters() {
   return (
-    state.selectedIngotCol.size > 0 ||
-    state.selectedIngotProficiency.size > 0 ||
-    state.selectedIngotExperience.size > 0 ||
+    state.selectedIngotNumericEffects.size > 0 ||
+    state.selectedIngotValueTypes.size > 0 ||
     state.selectedIngotDamage.size > 0 ||
     state.selectedIngotWeaponTypes.size > 0 ||
     state.selectedIngotWeaponWeaknesses.size > 0 ||
@@ -474,15 +501,23 @@ function matchesIngotSelection(boss) {
   const filters = boss.ingot?.filters;
   if (!filters) return false;
 
-  const matchesValue = (selection, value) => selection.size === 0 || selection.has(value);
   const matchesValues = (selection, values) =>
     selection.size === 0 || (Array.isArray(values) && values.some((value) => selection.has(value)));
 
+  const selectedNumericKeys = INGOT_NUMERIC_EFFECT_TYPES.filter((key) => state.selectedIngotNumericEffects.has(key));
+  const numericKeysToCheck = selectedNumericKeys.length > 0 ? selectedNumericKeys : INGOT_NUMERIC_EFFECT_TYPES;
+  const numericEffectMatches =
+    selectedNumericKeys.length === 0 || selectedNumericKeys.some((key) => filters[key] != null);
+  const valueTypeMatches =
+    state.selectedIngotValueTypes.size === 0 ||
+    numericKeysToCheck.some((key) => state.selectedIngotValueTypes.has(filters[key]));
+  const damageMatches =
+    state.selectedIngotDamage.size === 0 || state.selectedIngotDamage.has(filters.damage);
+
   return (
-    matchesValue(state.selectedIngotCol, filters.col) &&
-    matchesValue(state.selectedIngotProficiency, filters.proficiency) &&
-    matchesValue(state.selectedIngotExperience, filters.experience) &&
-    matchesValue(state.selectedIngotDamage, filters.damage) &&
+    numericEffectMatches &&
+    valueTypeMatches &&
+    damageMatches &&
     matchesValues(state.selectedIngotWeaponTypes, filters.weaponTypes) &&
     matchesValues(state.selectedIngotWeaponWeaknesses, filters.weaponWeaknesses) &&
     matchesValues(state.selectedIngotAttributes, filters.attributes)
@@ -675,7 +710,7 @@ function makeActiveFilter(label, value, type) {
     label,
     value,
     valueLabel,
-    iconType: isCombatIconType(type) ? type : null,
+    iconType: hasFilterIcon(value, type) ? type : null,
   };
 }
 
@@ -686,10 +721,9 @@ function renderActiveFilters() {
     ...[...state.selectedSeries].map((value) => makeActiveFilter(t("integralFilter"), value, "series")),
     ...[...state.selectedChaosLevels].map((value) => makeActiveFilter(t("chaosLevelFilter"), value, "chaosLevel")),
     ...[...state.selectedLocations].map((value) => makeActiveFilter(t("locationFilter"), locationLabels[state.language][value] || value)),
-    ...[...state.selectedIngotCol].map((value) => makeActiveFilter(t("ingotColLegend"), value, "ingotCol")),
-    ...[...state.selectedIngotProficiency].map((value) => makeActiveFilter(t("ingotProficiencyLegend"), value, "ingotProficiency")),
-    ...[...state.selectedIngotExperience].map((value) => makeActiveFilter(t("ingotExperienceLegend"), value, "ingotExperience")),
-    ...[...state.selectedIngotDamage].map((value) => makeActiveFilter(t("ingotDamageLegend"), value, "ingotDamage")),
+    ...[...state.selectedIngotNumericEffects].map((value) => makeActiveFilter(t("ingotEffectLegend"), value, "ingotEffect")),
+    ...[...state.selectedIngotValueTypes].map((value) => makeActiveFilter(t("ingotEffectLegend"), value, "ingotEffect")),
+    ...[...state.selectedIngotDamage].map((value) => makeActiveFilter(t("ingotEffectLegend"), value, "ingotEffect")),
     ...[...state.selectedIngotWeaponTypes].map((value) => makeActiveFilter(t("ingotWeaponTypeLegend"), value, "ingotWeaponType")),
     ...[...state.selectedIngotWeaponWeaknesses].map((value) => makeActiveFilter(t("ingotWeaponWeaknessLegend"), value, "ingotWeaponWeakness")),
     ...[...state.selectedIngotAttributes].map((value) => makeActiveFilter(t("ingotAttributeLegend"), value, "ingotAttribute")),
@@ -705,7 +739,7 @@ function renderActiveFilters() {
       chip.setAttribute("aria-label", `${filter.label}: ${filter.valueLabel}`);
       const prefix = document.createElement("span");
       prefix.textContent = `${filter.label}:`;
-      chip.append(prefix, createCombatIcon(filter.value, filter.valueLabel, "combat-icon active-filter-icon"));
+      chip.append(prefix, createFilterIcon(filter.value, filter.valueLabel, filter.iconType, "combat-icon active-filter-icon"));
     } else {
       chip.textContent = `${filter.label}: ${filter.valueLabel}`;
     }
@@ -773,9 +807,8 @@ function clearChaosLevelFilters() {
 }
 
 function clearIngotFilters() {
-  state.selectedIngotCol.clear();
-  state.selectedIngotProficiency.clear();
-  state.selectedIngotExperience.clear();
+  state.selectedIngotNumericEffects.clear();
+  state.selectedIngotValueTypes.clear();
   state.selectedIngotDamage.clear();
   state.selectedIngotWeaponTypes.clear();
   state.selectedIngotWeaponWeaknesses.clear();
@@ -820,10 +853,8 @@ function getFilterType(input) {
   if (input.closest("#attributeFilters")) return "attribute";
   if (input.closest("#integralFilters")) return "series";
   if (input.closest("#chaosLevelFilters")) return "chaosLevel";
-  if (input.closest("#ingotColFilters")) return "ingotCol";
-  if (input.closest("#ingotProficiencyFilters")) return "ingotProficiency";
-  if (input.closest("#ingotExperienceFilters")) return "ingotExperience";
-  if (input.closest("#ingotDamageFilters")) return "ingotDamage";
+  if (input.closest("#ingotEffectFilters")) return "ingotEffect";
+  if (input.closest("#ingotDamageFilters")) return "ingotEffect";
   if (input.closest("#ingotWeaponTypeFilters")) return "ingotWeaponType";
   if (input.closest("#ingotWeaponWeaknessFilters")) return "ingotWeaponWeakness";
   if (input.closest("#ingotAttributeFilters")) return "ingotAttribute";
@@ -879,10 +910,9 @@ createFilterOptions(
 createFilterOptions(elements.integralFilters, INTEGRAL_SERIES, integralLabels, state.selectedSeries, "series");
 createFilterOptions(elements.chaosLevelFilters, CHAOS_LEVELS, chaosLevelLabels[state.language], state.selectedChaosLevels, "chaosLevel");
 createFilterOptions(elements.locationFilters, LOCATION_TYPES, locationLabels, state.selectedLocations, "location");
-createFilterOptions(elements.ingotColFilters, INGOT_COL_TYPES, ingotFilterLabels.ja, state.selectedIngotCol, "ingotCol");
-createFilterOptions(elements.ingotProficiencyFilters, INGOT_PROFICIENCY_TYPES, ingotFilterLabels.ja, state.selectedIngotProficiency, "ingotProficiency");
-createFilterOptions(elements.ingotExperienceFilters, INGOT_EXPERIENCE_TYPES, ingotFilterLabels.ja, state.selectedIngotExperience, "ingotExperience");
-createFilterOptions(elements.ingotDamageFilters, INGOT_DAMAGE_TYPES, ingotFilterLabels.ja, state.selectedIngotDamage, "ingotDamage");
+createFilterOptions(elements.ingotEffectFilters, INGOT_NUMERIC_EFFECT_TYPES, ingotFilterLabels.ja, state.selectedIngotNumericEffects, "ingotEffect");
+createFilterOptions(elements.ingotEffectFilters, INGOT_VALUE_TYPES, ingotFilterLabels.ja, state.selectedIngotValueTypes, "ingotEffect");
+createFilterOptions(elements.ingotDamageFilters, INGOT_DAMAGE_TYPES, ingotFilterLabels.ja, state.selectedIngotDamage, "ingotEffect");
 createFilterOptions(elements.ingotWeaponTypeFilters, INGOT_WEAPON_TYPES, ingotFilterLabels.ja, state.selectedIngotWeaponTypes, "ingotWeaponType");
 createFilterOptions(elements.ingotWeaponWeaknessFilters, WEAPON_TYPES, ingotFilterLabels.ja, state.selectedIngotWeaponWeaknesses, "ingotWeaponWeakness");
 createFilterOptions(elements.ingotAttributeFilters, ATTRIBUTES, ingotFilterLabels.ja, state.selectedIngotAttributes, "ingotAttribute");

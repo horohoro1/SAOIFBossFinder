@@ -35,95 +35,69 @@
       <section class="finder" aria-label="ボス検索条件">
         <div class="filter-heading">
           <div>
-            <p class="section-kicker">WEAKNESS FILTER</p>
-            <h2 data-i18n="filterTitle">弱点から探す</h2>
+            <p class="section-kicker">FILTERS</p>
+            <h2 data-i18n="filterTitle">絞り込み</h2>
           </div>
           <button id="clearFilters" class="clear-button" type="button" disabled data-i18n="clear">
             条件をリセット
           </button>
         </div>
 
-        <div class="filter-groups">
-          <fieldset class="filter-group">
-            <legend data-i18n="weaponLegend">武器弱点</legend>
-            <p class="filter-help" data-i18n="multiple">複数選択可</p>
-            <div id="weaponFilters" class="filter-options" aria-label="武器弱点"></div>
+        <div class="filter-groups filter-columns primary-filter-columns">
+          <fieldset class="filter-group filter-column filter-column--icons weakness-filter-column">
+            <legend data-i18n="weaknessLegend">武器 / 属性</legend>
+            <p class="filter-help filter-column-help" data-i18n="multiple">複数選択可</p>
+            <div class="filter-subgroup">
+              <div id="weaponFilters" class="filter-options" aria-label="武器弱点"></div>
+            </div>
+            <div class="filter-subgroup">
+              <div id="attributeFilters" class="filter-options" aria-label="属性弱点"></div>
+            </div>
           </fieldset>
 
-          <fieldset class="filter-group">
-            <legend data-i18n="attributeLegend">属性弱点</legend>
-            <p class="filter-help" data-i18n="multiple">複数選択可</p>
-            <div id="attributeFilters" class="filter-options" aria-label="属性弱点"></div>
-          </fieldset>
-
-          <fieldset class="filter-group">
+          <fieldset class="filter-group filter-column">
             <legend data-i18n="locationLegend">エリア</legend>
-            <p class="filter-help" data-i18n="multiple">複数選択可</p>
+            <p class="filter-help filter-column-help" data-i18n="multiple">複数選択可</p>
             <div id="locationFilters" class="filter-options" aria-label="エリア"></div>
           </fieldset>
 
-          <fieldset id="chaosLevelFilterGroup" class="filter-group" hidden>
+          <fieldset id="chaosLevelFilterGroup" class="filter-group filter-column" hidden>
             <legend data-i18n="chaosLevelLegend">カオスレベル</legend>
-            <p class="filter-help" data-i18n="multiple">複数選択可</p>
+            <p class="filter-help filter-column-help" data-i18n="multiple">複数選択可</p>
             <div id="chaosLevelFilters" class="filter-options" aria-label="カオスレベル"></div>
           </fieldset>
 
-          <fieldset id="integralFilterGroup" class="filter-group" hidden>
+          <fieldset id="integralFilterGroup" class="filter-group filter-column" hidden>
             <legend data-i18n="integralLegend">インテグラル</legend>
-            <p class="filter-help" data-i18n="multiple">複数選択可</p>
+            <p class="filter-help filter-column-help" data-i18n="multiple">複数選択可</p>
             <div id="integralFilters" class="filter-options" aria-label="インテグラル"></div>
           </fieldset>
         </div>
 
-        <section id="ingotFiltersSection" class="ingot-filters" hidden aria-label="入手インゴットで絞り込み">
-          <div class="ingot-filter-heading">
-            <p class="section-kicker">DUNGEON INGOT</p>
-            <h3 data-i18n="ingotFilterTitle">入手インゴットで絞り込み</h3>
-          </div>
-          <p class="filter-note" data-i18n="ingotFilterNote">
-            同じ分類内ではいずれか、異なる分類ではすべての条件に一致するインゴットを持つボスを表示します。
-          </p>
-          <div class="filter-groups">
-            <fieldset class="filter-group">
-              <legend data-i18n="ingotColLegend">Col獲得量</legend>
-              <p class="filter-help" data-i18n="multiple">複数選択可</p>
-              <div id="ingotColFilters" class="filter-options" aria-label="Col獲得量"></div>
-            </fieldset>
-
-            <fieldset class="filter-group">
-              <legend data-i18n="ingotProficiencyLegend">熟練度経験値</legend>
-              <p class="filter-help" data-i18n="multiple">複数選択可</p>
-              <div id="ingotProficiencyFilters" class="filter-options" aria-label="熟練度経験値"></div>
-            </fieldset>
-
-            <fieldset class="filter-group">
-              <legend data-i18n="ingotExperienceLegend">経験値</legend>
-              <p class="filter-help" data-i18n="multiple">複数選択可</p>
-              <div id="ingotExperienceFilters" class="filter-options" aria-label="経験値"></div>
-            </fieldset>
-
-            <fieldset class="filter-group">
-              <legend data-i18n="ingotDamageLegend">ダメージ</legend>
-              <p class="filter-help" data-i18n="multiple">複数選択可</p>
-              <div id="ingotDamageFilters" class="filter-options" aria-label="ダメージ"></div>
-            </fieldset>
-
-            <fieldset class="filter-group">
+        <section id="ingotFiltersSection" class="ingot-filters" hidden>
+          <div class="filter-groups filter-columns ingot-filter-columns">
+            <fieldset class="filter-group filter-column ingot-weapon-types-column">
               <legend data-i18n="ingotWeaponTypeLegend">武器種</legend>
-              <p class="filter-help" data-i18n="multiple">複数選択可</p>
+              <p class="filter-help filter-column-help" data-i18n="multiple">複数選択可</p>
               <div id="ingotWeaponTypeFilters" class="filter-options" aria-label="武器種"></div>
             </fieldset>
 
-            <fieldset class="filter-group">
-              <legend data-i18n="ingotWeaponWeaknessLegend">武器弱点</legend>
-              <p class="filter-help" data-i18n="multiple">複数選択可</p>
-              <div id="ingotWeaponWeaknessFilters" class="filter-options" aria-label="武器弱点"></div>
+            <fieldset class="filter-group filter-column ingot-effect-column">
+              <legend data-i18n="ingotEffectLegend">効果</legend>
+              <p class="filter-help filter-column-help" data-i18n="multiple">複数選択可</p>
+              <div id="ingotEffectFilters" class="filter-options" aria-label="効果"></div>
             </fieldset>
 
-            <fieldset class="filter-group">
-              <legend data-i18n="ingotAttributeLegend">属性</legend>
-              <p class="filter-help" data-i18n="multiple">複数選択可</p>
-              <div id="ingotAttributeFilters" class="filter-options" aria-label="属性"></div>
+            <fieldset class="filter-group filter-column filter-column--icons weakness-filter-column">
+              <legend data-i18n="weaknessLegend">武器 / 属性</legend>
+              <p class="filter-help filter-column-help" data-i18n="multiple">複数選択可</p>
+              <div class="filter-subgroup ingot-physical-damage-subgroup">
+                <div id="ingotWeaponWeaknessFilters" class="filter-options" aria-label="武器弱点"></div>
+                <div id="ingotDamageFilters" class="filter-options" aria-label="ダメージ"></div>
+              </div>
+              <div class="filter-subgroup">
+                <div id="ingotAttributeFilters" class="filter-options" aria-label="属性"></div>
+              </div>
             </fieldset>
           </div>
         </section>
