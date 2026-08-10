@@ -284,6 +284,7 @@ h2 {
    ========================================================================== */
 .results-section {
   margin-top: 20px;
+  container-type: inline-size;
 }
 
 .result-count {
@@ -388,7 +389,7 @@ h2 {
   z-index: 10;
   top: calc(100% + 8px);
   right: 0;
-  width: calc(100vw - 32px);
+  width: calc(100vw - 40px);
   max-width: 520px;
   box-sizing: border-box;
   max-height: min(72vh, 720px);
@@ -401,6 +402,13 @@ h2 {
   transform: translateY(-4px);
   transition: opacity 150ms ease, transform 150ms ease;
   visibility: hidden;
+}
+
+/* 対応ブラウザでは、検索結果セクションの幅を上限として使う。 */
+@supports (width: 1cqw) {
+  .boss-detail-tooltip {
+    max-width: min(520px, 100cqw);
+  }
 }
 
 @media (hover: hover) {
