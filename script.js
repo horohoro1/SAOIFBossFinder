@@ -25,6 +25,16 @@ const LABYRINTH_DETAIL_IMAGES = {
   91: ["91.png"],
   100: ["100_1.png", "100_2.png"],
 };
+const UNDERGROUND_LABYRINTH_DETAIL_IMAGES = {
+  B1F: ["b1.png"],
+  B2F: ["b2.png"],
+  B3F: ["b3.png"],
+  B4F: ["b4.png"],
+  B5F: ["b5.png"],
+  B6F: ["b6.png"],
+  B7F: ["b7.png"],
+  B8F: ["b8.png"],
+};
 const CHAOS_DETAIL_IMAGES = {
   195: { 突: ["195pi_1.jpg", "195pi_2.jpg"] },
   215: { 斬: ["215sl_1.png", "215sl_2.png"] },
@@ -163,6 +173,8 @@ const translations = {
     ingotImageAlt: (name) => `${name}の画像`,
     labyrinthDetail: (floor) => `${floor}層の詳細情報`,
     labyrinthImageAlt: (floor, index, total) => `${floor}層の詳細情報（${index} / ${total}）`,
+    undergroundLabyrinthDetail: (floor) => `地下迷宮${floor}の詳細情報`,
+    undergroundLabyrinthImageAlt: (floor, index, total) => `地下迷宮${floor}の詳細情報（${index} / ${total}）`,
     chaosDetail: (level) => `カオスレベル${level}の詳細情報`,
     chaosImageAlt: (level, index, total) => `カオスレベル${level}の詳細情報（${index} / ${total}）`,
     noResultsTitle: "該当するボスが見つかりません",
@@ -205,6 +217,8 @@ const translations = {
     ingotImageAlt: (name) => `${name} image`,
     labyrinthDetail: (floor) => `Floor ${floor} details`,
     labyrinthImageAlt: (floor, index, total) => `Floor ${floor} details (${index} / ${total})`,
+    undergroundLabyrinthDetail: (floor) => `Underground Labyrinth ${floor} details`,
+    undergroundLabyrinthImageAlt: (floor, index, total) => `Underground Labyrinth ${floor} details (${index} / ${total})`,
     chaosDetail: (level) => `Chaos Level ${level} details`,
     chaosImageAlt: (level, index, total) => `Chaos Level ${level} details (${index} / ${total})`,
     noResultsTitle: "No bosses found",
@@ -576,6 +590,10 @@ function labyrinthImagePath(filename) {
   return `images/labyrinth/${encodeURIComponent(filename)}`;
 }
 
+function undergroundLabyrinthImagePath(filename) {
+  return `images/underL/${encodeURIComponent(filename)}`;
+}
+
 function chaosImagePath(filename) {
   return `images/chaos/${encodeURIComponent(filename)}`;
 }
@@ -589,6 +607,17 @@ function detailForBoss(boss) {
       label: t("labyrinthDetail")(boss.floor),
       imageAlt: (index) => t("labyrinthImageAlt")(boss.floor, index + 1, images.length),
       imagePath: labyrinthImagePath,
+    };
+  }
+
+  if (boss.location === "undergroundLabyrinth") {
+    const images = UNDERGROUND_LABYRINTH_DETAIL_IMAGES[boss.floor];
+    if (!images?.length) return null;
+    return {
+      images,
+      label: t("undergroundLabyrinthDetail")(boss.floor),
+      imageAlt: (index) => t("undergroundLabyrinthImageAlt")(boss.floor, index + 1, images.length),
+      imagePath: undergroundLabyrinthImagePath,
     };
   }
 
