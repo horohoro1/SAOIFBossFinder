@@ -2,10 +2,24 @@ const WEAPON_TYPES = ["斬", "打", "突"];
 const ATTRIBUTES = ["火", "水", "風", "土", "聖", "闇"];
 const INTEGRAL_SERIES = ["Integral", "Nox", "Lux", "Rosso", "Yasha", "Gaou", "Machina", "Gale", "Rex", "Lava"];
 const CHAOS_LEVELS = ["95", "110", "135", "155", "175", "195", "215", "235", "255", "275", "295"];
+const CHAPTERS = ["1", "2"];
+const CHAPTER_INTEGRAL_SERIES = {
+  1: ["Integral", "Nox", "Lux", "Rosso", "Yasha"],
+  2: ["Gaou", "Machina", "Gale", "Rex", "Lava"],
+};
 const INGOT_NUMERIC_EFFECT_TYPES = ["col", "experience", "proficiency"];
 const INGOT_VALUE_TYPES = ["fixed", "percent"];
 const INGOT_DAMAGE_TYPES = ["nonCritical", "critical"];
 const INGOT_WEAPON_TYPES = ["片手直剣", "片手細剣", "片手棍", "両手斧", "両手槍", "短剣", "弓", "盾"];
+const LABYRINTH_FLOOR_ORDER = {
+  1: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 20, 25, 27, 35, 40, 47, 50, 61, 74, 75, 81, 85, 91, 100],
+  2: [31, 79, 83, 51, 17, 69, 23, 19, 33, 44, 24, 89, 16, 65],
+};
+const LABYRINTH_RESULT_ORDER = new Map(
+  Object.entries(LABYRINTH_FLOOR_ORDER).flatMap(([chapter, floors]) =>
+    floors.map((floor, index) => [`${chapter}:${floor}`, Number(chapter) * 100 + index]),
+  ),
+);
 const LABYRINTH_DETAIL_IMAGES = {
   16: ["16_1.png", "16_2.png"],
   17: ["17.png"],
@@ -138,6 +152,16 @@ const chaosLevelLabels = {
     295: "295",
   },
 };
+const chapterLabels = {
+  ja: {
+    1: "第1章",
+    2: "第2章",
+  },
+  en: {
+    1: "Chapter 1",
+    2: "Chapter 2",
+  },
+};
 
 const translations = {
   ja: {
@@ -159,6 +183,8 @@ const translations = {
     integralFilter: "インテグラル",
     chaosLevelLegend: "カオスレベル",
     chaosLevelFilter: "カオスレベル",
+    chapterLegend: "章",
+    chapterFilter: "章",
     locationLegend: "エリア",
     locationFilter: "エリア",
     ingotEffectLegend: "効果",
@@ -203,6 +229,8 @@ const translations = {
     integralFilter: "Integral Series",
     chaosLevelLegend: "Chaos Level",
     chaosLevelFilter: "Chaos Level",
+    chapterLegend: "Chapter",
+    chapterFilter: "Chapter",
     locationLegend: "Area",
     locationFilter: "Area",
     ingotEffectLegend: "Effects",
@@ -297,6 +325,9 @@ const state = {
   selectedWeapons: new Set(),
   selectedAttributes: new Set(),
   selectedSeries: new Set(),
+  manuallySelectedSeries: new Set(),
+  autoSelectedSeries: new Set(),
+  selectedChapters: new Set(),
   selectedChaosLevels: new Set(),
   selectedLocations: new Set(),
   selectedIngotNumericEffects: new Set(),
@@ -310,6 +341,8 @@ const state = {
 const elements = {
   weaponFilters: document.querySelector("#weaponFilters"),
   attributeFilters: document.querySelector("#attributeFilters"),
+  chapterFilterGroup: document.querySelector("#chapterFilterGroup"),
+  chapterFilters: document.querySelector("#chapterFilters"),
   integralFilterGroup: document.querySelector("#integralFilterGroup"),
   integralFilters: document.querySelector("#integralFilters"),
   chaosLevelFilterGroup: document.querySelector("#chaosLevelFilterGroup"),
@@ -364,6 +397,9 @@ function labelsFor(type) {
   }
   if (type === "chaosLevel") {
     return chaosLevelLabels[state.language] || chaosLevelLabels.ja;
+  }
+  if (type === "chapter") {
+    return chapterLabels[state.language] || chapterLabels.ja;
   }
   if (type.startsWith("ingot")) {
     return ingotFilterLabels[state.language] || ingotFilterLabels.ja;
@@ -433,10 +469,23 @@ function createFilterOptions(container, values, labels, selectionSet, type) {
     input.type = "checkbox";
     input.value = value;
     input.addEventListener("change", () => {
-      if (input.checked) {
-        selectionSet.add(value);
+      if (type === "series") {
+        if (input.checked) {
+          state.manuallySelectedSeries.add(value);
+        } else {
+          state.manuallySelectedSeries.delete(value);
+          deselectChaptersForIntegralSeries(value);
+        }
+        syncChapterIntegralSeriesSelection();
       } else {
-        selectionSet.delete(value);
+        if (input.checked) {
+          selectionSet.add(value);
+        } else {
+          selectionSet.delete(value);
+        }
+        if (type === "chapter") {
+          syncChapterIntegralSeriesSelection();
+        }
       }
       if (type === "location") {
         syncLocationDependentFilterVisibility();
@@ -548,6 +597,9 @@ function matchesSelection(boss) {
   const seriesMatches =
     state.selectedSeries.size === 0 ||
     boss.integralSeries.some((series) => state.selectedSeries.has(series));
+  const chapterMatches =
+    state.selectedChapters.size === 0 ||
+    (boss.location === "labyrinth" && state.selectedChapters.has(String(boss.chapter)));
 
   const chaosLevelMatches =
     state.selectedChaosLevels.size === 0 ||
@@ -556,7 +608,7 @@ function matchesSelection(boss) {
     state.selectedLocations.size === 0 ||
     (boss.location && state.selectedLocations.has(boss.location));
 
-  return weaponMatches && attributeMatches && seriesMatches && chaosLevelMatches && locationMatches && matchesIngotSelection(boss);
+  return weaponMatches && attributeMatches && seriesMatches && chapterMatches && chaosLevelMatches && locationMatches && matchesIngotSelection(boss);
 }
 
 function getFloorLabel(boss) {
@@ -748,6 +800,7 @@ function renderActiveFilters() {
     ...[...state.selectedWeapons].map((value) => makeActiveFilter(t("weaponFilter"), value, "weapon")),
     ...[...state.selectedAttributes].map((value) => makeActiveFilter(t("attributeFilter"), value, "attribute")),
     ...[...state.selectedSeries].map((value) => makeActiveFilter(t("integralFilter"), value, "series")),
+    ...[...state.selectedChapters].map((value) => makeActiveFilter(t("chapterFilter"), value, "chapter")),
     ...[...state.selectedChaosLevels].map((value) => makeActiveFilter(t("chaosLevelFilter"), value, "chaosLevel")),
     ...[...state.selectedLocations].map((value) => makeActiveFilter(t("locationFilter"), locationLabels[state.language][value] || value)),
     ...[...state.selectedIngotNumericEffects].map((value) => makeActiveFilter(t("ingotEffectLegend"), value, "ingotEffect")),
@@ -776,12 +829,23 @@ function renderActiveFilters() {
   });
 }
 
+function orderSearchResults(bosses) {
+  if (!bosses.length || !bosses.every((boss) => boss.location === "labyrinth")) return bosses;
+
+  return [...bosses].sort((a, b) => {
+    const aOrder = LABYRINTH_RESULT_ORDER.get(`${a.chapter}:${a.floor}`) ?? Number.MAX_SAFE_INTEGER;
+    const bOrder = LABYRINTH_RESULT_ORDER.get(`${b.chapter}:${b.floor}`) ?? Number.MAX_SAFE_INTEGER;
+    return aOrder - bOrder || a.id - b.id;
+  });
+}
+
 function render() {
-  const visibleBosses = state.bosses.filter(matchesSelection);
+  const visibleBosses = orderSearchResults(state.bosses.filter(matchesSelection));
   const hasFilters =
     state.selectedWeapons.size > 0 ||
     state.selectedAttributes.size > 0 ||
     state.selectedSeries.size > 0 ||
+    state.selectedChapters.size > 0 ||
     state.selectedChaosLevels.size > 0 ||
     state.selectedLocations.size > 0 ||
     hasActiveIngotFilters();
@@ -811,6 +875,9 @@ function clearFilters() {
   state.selectedWeapons.clear();
   state.selectedAttributes.clear();
   state.selectedSeries.clear();
+  state.manuallySelectedSeries.clear();
+  state.autoSelectedSeries.clear();
+  state.selectedChapters.clear();
   state.selectedChaosLevels.clear();
   state.selectedLocations.clear();
   clearIngotFilters();
@@ -821,11 +888,56 @@ function clearFilters() {
   render();
 }
 
+function syncChapterIntegralSeriesSelection() {
+  const automaticSeries = new Set(
+    [...state.selectedChapters].flatMap((chapter) => CHAPTER_INTEGRAL_SERIES[chapter] || []),
+  );
+
+  state.autoSelectedSeries.clear();
+  automaticSeries.forEach((series) => state.autoSelectedSeries.add(series));
+  state.selectedSeries.clear();
+  state.manuallySelectedSeries.forEach((series) => state.selectedSeries.add(series));
+  state.autoSelectedSeries.forEach((series) => state.selectedSeries.add(series));
+
+  elements.integralFilters.querySelectorAll('input[type="checkbox"]').forEach((input) => {
+    input.checked = state.selectedSeries.has(input.value);
+  });
+}
+
+function deselectChaptersForIntegralSeries(series) {
+  const chaptersToClear = [...state.selectedChapters].filter((chapter) =>
+    (CHAPTER_INTEGRAL_SERIES[chapter] || []).includes(series),
+  );
+  if (!chaptersToClear.length) return;
+
+  chaptersToClear.forEach((chapter) => {
+    (CHAPTER_INTEGRAL_SERIES[chapter] || []).forEach((remainingSeries) => {
+      if (remainingSeries !== series && state.autoSelectedSeries.has(remainingSeries)) {
+        state.manuallySelectedSeries.add(remainingSeries);
+      }
+    });
+    state.selectedChapters.delete(chapter);
+  });
+  elements.chapterFilters.querySelectorAll('input[type="checkbox"]').forEach((input) => {
+    if (chaptersToClear.includes(input.value)) input.checked = false;
+  });
+}
+
 function clearIntegralFilters() {
   state.selectedSeries.clear();
+  state.manuallySelectedSeries.clear();
+  state.autoSelectedSeries.clear();
   elements.integralFilterGroup.querySelectorAll('input[type="checkbox"]').forEach((input) => {
     input.checked = false;
   });
+}
+
+function clearChapterFilters() {
+  state.selectedChapters.clear();
+  elements.chapterFilterGroup.querySelectorAll('input[type="checkbox"]').forEach((input) => {
+    input.checked = false;
+  });
+  syncChapterIntegralSeriesSelection();
 }
 
 function clearChaosLevelFilters() {
@@ -863,6 +975,14 @@ function syncIntegralFilterVisibility() {
   }
 }
 
+function syncChapterFilterVisibility() {
+  const showChapterFilters = state.selectedLocations.has("labyrinth");
+  elements.chapterFilterGroup.hidden = !showChapterFilters;
+  if (!showChapterFilters) {
+    clearChapterFilters();
+  }
+}
+
 function syncChaosLevelFilterVisibility() {
   const showChaosLevelFilters = state.selectedLocations.has("chaosShowdown");
   elements.chaosLevelFilterGroup.hidden = !showChaosLevelFilters;
@@ -873,6 +993,7 @@ function syncChaosLevelFilterVisibility() {
 
 function syncLocationDependentFilterVisibility() {
   syncChaosLevelFilterVisibility();
+  syncChapterFilterVisibility();
   syncIntegralFilterVisibility();
   syncIngotFilterVisibility();
 }
@@ -880,6 +1001,7 @@ function syncLocationDependentFilterVisibility() {
 function getFilterType(input) {
   if (input.closest("#weaponFilters")) return "weapon";
   if (input.closest("#attributeFilters")) return "attribute";
+  if (input.closest("#chapterFilters")) return "chapter";
   if (input.closest("#integralFilters")) return "series";
   if (input.closest("#chaosLevelFilters")) return "chaosLevel";
   if (input.closest("#ingotEffectFilters")) return "ingotEffect";
@@ -938,6 +1060,7 @@ createFilterOptions(
 );
 createFilterOptions(elements.integralFilters, INTEGRAL_SERIES, integralLabels, state.selectedSeries, "series");
 createFilterOptions(elements.chaosLevelFilters, CHAOS_LEVELS, chaosLevelLabels[state.language], state.selectedChaosLevels, "chaosLevel");
+createFilterOptions(elements.chapterFilters, CHAPTERS, chapterLabels[state.language], state.selectedChapters, "chapter");
 createFilterOptions(elements.locationFilters, LOCATION_TYPES, locationLabels, state.selectedLocations, "location");
 createFilterOptions(elements.ingotEffectFilters, INGOT_NUMERIC_EFFECT_TYPES, ingotFilterLabels.ja, state.selectedIngotNumericEffects, "ingotEffect");
 createFilterOptions(elements.ingotEffectFilters, INGOT_VALUE_TYPES, ingotFilterLabels.ja, state.selectedIngotValueTypes, "ingotEffect");
