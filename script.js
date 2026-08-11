@@ -686,8 +686,8 @@ function renderCard(boss) {
       imageList.append(image);
     });
   }
-  card.querySelector(".boss-name").textContent =
-    state.language === "ja" && boss.japaneseName ? boss.japaneseName : boss.name;
+  const useJapaneseName = state.language === "ja" && boss.location !== "labyrinth" && Boolean(boss.japaneseName);
+  card.querySelector(".boss-name").textContent = useJapaneseName ? boss.japaneseName : boss.name;
   const subname = card.querySelector(".boss-subname");
   subname.textContent = boss.alternateName;
   subname.hidden = !boss.alternateName;
