@@ -278,9 +278,16 @@ h2 {
 }
 
 .ingot-filters {
-  margin-top: 20px;
-  padding-top: 18px;
+  margin-top: 14px;
+  padding-top: 12px;
   border-top: 1px solid var(--border-color);
+}
+
+.ingot-filter-heading {
+  margin: 0;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
 .filter-groups.filter-columns {
@@ -294,8 +301,8 @@ h2 {
 
 .filter-groups.ingot-filter-columns {
   grid-template-columns: 1fr;
-  gap: 16px;
-  margin-top: 12px;
+  gap: 10px;
+  margin-top: 8px;
 }
 
 .filter-group.filter-column {
@@ -407,6 +414,12 @@ h2 {
   flex-wrap: wrap;
   align-items: center;
   gap: 6px;
+}
+
+.ingot-filter-columns .filter-subgroup + .filter-subgroup {
+  margin-top: 10px;
+  padding-top: 0;
+  border-top: 0;
 }
 
 .ingot-physical-damage-subgroup .filter-options {
@@ -539,6 +552,22 @@ h2 {
   line-height: 1;
 }
 
+.boss-id.chaos-level-badge {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Yu Gothic UI", Meiryo, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.boss-id.underground-floor-badge {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
 .floor-detail {
   position: relative;
 }
@@ -649,8 +678,10 @@ h2 {
 
 /* 弱点・バッジエリア */
 .weaknesses {
-  display: grid;
-  gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
   margin-top: auto;
   padding-top: 15px;
   border-top: 1px solid var(--border-light);
@@ -660,6 +691,16 @@ h2 {
   display: flex;
   align-items: center;
   gap: 8px;
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+.weakness-row[hidden] {
+  display: none !important;
+}
+
+.ingot-row {
+  flex-basis: 100%;
 }
 
 .weakness-label {

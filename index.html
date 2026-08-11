@@ -22,7 +22,7 @@
         <p class="eyebrow">SWORD ART ONLINE INTEGRAL FACTOR</p>
         <h1>Boss Finder</h1>
         <div class="hero-controls">
-          <button id="languageToggle" class="language-toggle" type="button" aria-label="Switch to English">
+          <button id="languageToggle" class="language-toggle" type="button" aria-label="Switch to English" hidden>
             EN
           </button>
           <button id="themeToggle" class="language-toggle theme-toggle" type="button" aria-label="Toggle dark mode">
@@ -35,7 +35,6 @@
       <section class="finder" aria-label="ボス検索条件">
         <div class="filter-heading">
           <div>
-            <p class="section-kicker">FILTERS</p>
             <h2 data-i18n="filterTitle">絞り込み</h2>
           </div>
           <button id="clearFilters" class="clear-button" type="button" disabled data-i18n="clear">
@@ -80,23 +79,21 @@
           </fieldset>
         </div>
 
-        <section id="ingotFiltersSection" class="ingot-filters" hidden>
+        <section id="ingotFiltersSection" class="ingot-filters" aria-labelledby="ingotFilterTitle" hidden>
+          <h3 id="ingotFilterTitle" class="ingot-filter-heading" data-i18n="ingotFiltersTitle">インゴット絞り込み</h3>
           <div class="filter-groups filter-columns ingot-filter-columns">
             <fieldset class="filter-group filter-column ingot-weapon-types-column">
-              <legend data-i18n="ingotWeaponTypeLegend">武器種</legend>
-              <p class="filter-help filter-column-help" data-i18n="multiple">複数選択可</p>
+              <legend class="visually-hidden" data-i18n="ingotWeaponTypeLegend">武器種</legend>
               <div id="ingotWeaponTypeFilters" class="filter-options" aria-label="武器種"></div>
             </fieldset>
 
             <fieldset class="filter-group filter-column ingot-effect-column">
-              <legend data-i18n="ingotEffectLegend">効果</legend>
-              <p class="filter-help filter-column-help" data-i18n="multiple">複数選択可</p>
+              <legend class="visually-hidden" data-i18n="ingotEffectLegend">効果</legend>
               <div id="ingotEffectFilters" class="filter-options" aria-label="効果"></div>
             </fieldset>
 
             <fieldset class="filter-group filter-column filter-column--icons weakness-filter-column">
-              <legend data-i18n="weaknessLegend">武器 / 属性</legend>
-              <p class="filter-help filter-column-help" data-i18n="multiple">複数選択可</p>
+              <legend class="visually-hidden" data-i18n="weaknessLegend">武器 / 属性</legend>
               <div class="filter-subgroup ingot-physical-damage-subgroup">
                 <div id="ingotWeaponWeaknessFilters" class="filter-options" aria-label="武器弱点"></div>
                 <div id="ingotDamageFilters" class="filter-options" aria-label="ダメージ"></div>
@@ -113,7 +110,6 @@
       <section class="results-section" aria-live="polite">
         <div class="results-heading">
           <div>
-            <p class="section-kicker">SEARCH RESULTS</p>
             <h2 id="resultTitle" data-i18n="resultTitle">ボス一覧</h2>
           </div>
           <p id="resultCount" class="result-count">読み込み中…</p>

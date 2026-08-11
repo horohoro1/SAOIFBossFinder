@@ -167,6 +167,7 @@ const translations = {
   ja: {
     heroCopy: "挑むボスの弱点を選択して、最適な相手を見つけよう。",
     filterTitle: "絞り込み",
+    ingotFiltersTitle: "インゴット絞り込み",
     clear: "条件をリセット",
     weaknessLegend: "武器 / 属性",
     weaponLegend: "武器弱点",
@@ -213,6 +214,7 @@ const translations = {
   en: {
     heroCopy: "Select a boss weakness to find the best opponent for your build.",
     filterTitle: "Filters",
+    ingotFiltersTitle: "Ingot filters",
     clear: "Clear filters",
     weaknessLegend: "Weaknesses",
     weaponLegend: "Physical weakness",
@@ -612,6 +614,12 @@ function matchesSelection(boss) {
 }
 
 function getFloorLabel(boss) {
+  if (boss.location === "chaosShowdown" && boss.chaosLevels[0]) {
+    return `Lv${boss.chaosLevels[0]}`;
+  }
+  if (boss.location === "undergroundLabyrinth" && boss.floor) {
+    return String(boss.floor);
+  }
   if (boss.floor) return t("floor")(boss.floor);
   if (boss.chapter) return state.language === "ja" ? `第${boss.chapter}章` : `Chapter ${boss.chapter}`;
   return "SPECIAL";
@@ -710,6 +718,8 @@ function renderCard(boss) {
   card.querySelector(".boss-location").textContent = location;
   const floorBadge = card.querySelector(".boss-id");
   floorBadge.textContent = getFloorLabel(boss);
+  floorBadge.classList.toggle("chaos-level-badge", boss.location === "chaosShowdown");
+  floorBadge.classList.toggle("underground-floor-badge", boss.location === "undergroundLabyrinth");
   const detail = detailForBoss(boss);
   if (detail) {
     const tooltip = card.querySelector(".boss-detail-tooltip");
