@@ -220,7 +220,7 @@ const translations = {
     loadError: "データを読み込めませんでした",
     loadErrorTitle: "ボスデータを読み込めませんでした",
     loadErrorCopy: "index.html をローカルサーバー経由で開いているか確認してください。",
-    floor: (floor) => `${floor}層`,
+    floor: (floor) => `${floor}F`,
   },
   en: {
     heroCopy: "Select a boss weakness to find the best opponent for your build.",
