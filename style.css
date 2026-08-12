@@ -837,6 +837,36 @@ h2 {
     grid-template-columns: 1fr;
   }
 
+  .weaknesses {
+    column-gap: 6px;
+  }
+
+  .weapon-row,
+  .attribute-row {
+    flex: 0 0 auto;
+    gap: 4px;
+  }
+
+  .weaknesses .weakness-label {
+    flex-basis: 30px;
+    font-size: 0.78rem;
+  }
+
+  .weapon-row .badge-list,
+  .attribute-row .badge-list {
+    flex-wrap: nowrap;
+    gap: 2px;
+  }
+
+  .weaknesses .icon-badge {
+    padding: 2px;
+  }
+
+  .weaknesses .badge-icon {
+    width: clamp(18px, 5.5vw, 24px);
+    height: clamp(18px, 5.5vw, 24px);
+  }
+
   .floor-detail {
     position: static;
   }
