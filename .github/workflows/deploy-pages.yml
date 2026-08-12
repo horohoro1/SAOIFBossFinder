@@ -35,6 +35,7 @@ jobs:
           cp index.html script.js style.css bosses.json _site/
           cp -R images fonts _site/
           touch _site/.nojekyll
+          sed -i "s|__BUILD_VERSION__|${GITHUB_SHA}|g" _site/index.html
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4

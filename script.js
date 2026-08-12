@@ -1,6 +1,12 @@
 const WEAPON_TYPES = ["斬", "打", "突"];
+const BUILD_VERSION = window.__buildVersion || "dev";
+
+function versionedAssetPath(path) {
+  const separator = path.includes("?") ? "&" : "?";
+  return `${path}${separator}v=${encodeURIComponent(BUILD_VERSION)}`;
+}
+
 const ATTRIBUTES = ["火", "水", "風", "土", "聖", "闇"];
-const INTEGRAL_SERIES = ["Integral", "Nox", "Lux", "Rosso", "Yasha", "Gaou", "Machina", "Gale", "Rex", "Lava"];
 const CHAOS_LEVELS = ["95", "110", "135", "155", "175", "195", "215", "235", "255", "275", "295"];
 const CHAPTERS = ["1", "2"];
 const CHAPTER_INTEGRAL_SERIES = {
@@ -169,6 +175,9 @@ const translations = {
     heroCopy: "挑むボスの弱点を選択して、最適な相手を見つけよう。",
     filterTitle: "絞り込み",
     ingotFiltersTitle: "インゴット絞り込み",
+    labyrinthFiltersTitle: "迷宮区絞り込み",
+    chaosFiltersTitle: "カオス討伐戦絞り込み",
+    detailImageButton: "詳細画像",
     clear: "条件をリセット",
     weaknessLegend: "武器 / 属性",
     weaponLegend: "武器弱点",
@@ -176,6 +185,7 @@ const translations = {
     multiple: "複数選択可",
     filterNote: "同じ分類内では「いずれか」、武器と属性を両方選んだ場合は「両方」に一致するボスを表示します。",
     resultTitle: "ボス一覧",
+    resultDetailHint: "画像アイコンをタップで詳細表示",
     resultCount: (shown, total) => `${shown} / ${total} 体`,
     weapon: "武器",
     attribute: "属性",
@@ -216,6 +226,9 @@ const translations = {
     heroCopy: "Select a boss weakness to find the best opponent for your build.",
     filterTitle: "Filters",
     ingotFiltersTitle: "Ingot filters",
+    labyrinthFiltersTitle: "Labyrinth filters",
+    chaosFiltersTitle: "Chaos Showdown filters",
+    detailImageButton: "View details",
     clear: "Clear filters",
     weaknessLegend: "Weaknesses",
     weaponLegend: "Physical weakness",
@@ -223,6 +236,7 @@ const translations = {
     multiple: "Multiple selections allowed",
     filterNote: "Selections within a group use OR. Selecting both groups requires matches in both.",
     resultTitle: "Boss list",
+    resultDetailHint: "Tap the image icon for details",
     resultCount: (shown, total) => `${shown} / ${total} bosses`,
     weapon: "Type",
     attribute: "Element",
@@ -346,10 +360,16 @@ const elements = {
   attributeFilters: document.querySelector("#attributeFilters"),
   chapterFilterGroup: document.querySelector("#chapterFilterGroup"),
   chapterFilters: document.querySelector("#chapterFilters"),
+  chapterOneFilters: document.querySelector("#chapterOneFilters"),
+  chapterTwoFilters: document.querySelector("#chapterTwoFilters"),
+  labyrinthFiltersSection: document.querySelector("#labyrinthFiltersSection"),
   integralFilterGroup: document.querySelector("#integralFilterGroup"),
   integralFilters: document.querySelector("#integralFilters"),
+  chapterOneIntegralFilters: document.querySelector("#chapterOneIntegralFilters"),
+  chapterTwoIntegralFilters: document.querySelector("#chapterTwoIntegralFilters"),
   chaosLevelFilterGroup: document.querySelector("#chaosLevelFilterGroup"),
   chaosLevelFilters: document.querySelector("#chaosLevelFilters"),
+  chaosFiltersSection: document.querySelector("#chaosFiltersSection"),
   locationFilters: document.querySelector("#locationFilters"),
   ingotFiltersSection: document.querySelector("#ingotFiltersSection"),
   ingotEffectFilters: document.querySelector("#ingotEffectFilters"),
@@ -700,7 +720,10 @@ function detailForBoss(boss) {
 
 function setCardDetailOpen(card, isOpen) {
   card.classList.toggle("detail-open", isOpen);
-  card.querySelector(".boss-id").setAttribute("aria-expanded", String(isOpen));
+  const expanded = String(isOpen);
+  card.querySelector(".boss-id").setAttribute("aria-expanded", expanded);
+  card.querySelector(".boss-detail-button")?.setAttribute("aria-expanded", expanded);
+  card.querySelector(".boss-detail-tooltip")?.setAttribute("aria-hidden", String(!isOpen));
 }
 
 function toggleCardDetail(card) {
@@ -725,14 +748,31 @@ function renderCard(boss) {
   if (detail) {
     const tooltip = card.querySelector(".boss-detail-tooltip");
     const imageList = tooltip.querySelector(".boss-detail-images");
+    const detailActions = card.querySelector(".boss-detail-actions");
+    const detailButton = card.querySelector(".boss-detail-button");
+    const tooltipId = `boss-detail-${boss.id}`;
     card.classList.add("has-detail-image");
     floorBadge.classList.add("has-detail-image");
     floorBadge.tabIndex = 0;
     floorBadge.setAttribute("role", "button");
     floorBadge.setAttribute("aria-label", detail.label);
     floorBadge.setAttribute("aria-expanded", "false");
+    floorBadge.setAttribute("aria-controls", tooltipId);
+    tooltip.id = tooltipId;
+    tooltip.setAttribute("role", "region");
+    tooltip.setAttribute("aria-label", detail.label);
+    tooltip.setAttribute("aria-hidden", "true");
     tooltip.hidden = false;
+    detailActions.hidden = false;
+    detailButton.querySelector(".boss-detail-button-label").textContent = t("detailImageButton");
+    detailButton.title = t("detailImageButton");
+    detailButton.setAttribute("aria-label", detail.label);
+    detailButton.setAttribute("aria-controls", tooltipId);
     card.addEventListener("click", () => toggleCardDetail(card));
+    detailButton.addEventListener("click", (event) => {
+      event.stopPropagation();
+      toggleCardDetail(card);
+    });
     floorBadge.addEventListener("keydown", (event) => {
       if (event.key === "Enter" || event.key === " ") {
         event.preventDefault();
@@ -978,25 +1018,18 @@ function syncIngotFilterVisibility() {
   }
 }
 
-function syncIntegralFilterVisibility() {
-  const showIntegralFilters = state.selectedLocations.has("labyrinth");
-  elements.integralFilterGroup.hidden = !showIntegralFilters;
-  if (!showIntegralFilters) {
-    clearIntegralFilters();
-  }
-}
-
-function syncChapterFilterVisibility() {
-  const showChapterFilters = state.selectedLocations.has("labyrinth");
-  elements.chapterFilterGroup.hidden = !showChapterFilters;
-  if (!showChapterFilters) {
+function syncLabyrinthFilterVisibility() {
+  const showLabyrinthFilters = state.selectedLocations.has("labyrinth");
+  elements.labyrinthFiltersSection.hidden = !showLabyrinthFilters;
+  if (!showLabyrinthFilters) {
     clearChapterFilters();
+    clearIntegralFilters();
   }
 }
 
 function syncChaosLevelFilterVisibility() {
   const showChaosLevelFilters = state.selectedLocations.has("chaosShowdown");
-  elements.chaosLevelFilterGroup.hidden = !showChaosLevelFilters;
+  elements.chaosFiltersSection.hidden = !showChaosLevelFilters;
   if (!showChaosLevelFilters) {
     clearChaosLevelFilters();
   }
@@ -1004,8 +1037,7 @@ function syncChaosLevelFilterVisibility() {
 
 function syncLocationDependentFilterVisibility() {
   syncChaosLevelFilterVisibility();
-  syncChapterFilterVisibility();
-  syncIntegralFilterVisibility();
+  syncLabyrinthFilterVisibility();
   syncIngotFilterVisibility();
 }
 
@@ -1039,7 +1071,7 @@ function changeLanguage() {
 
 async function loadBosses() {
   try {
-    const response = await fetch("bosses.json");
+    const response = await fetch(versionedAssetPath("bosses.json"));
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
     const data = await response.json();
@@ -1069,9 +1101,23 @@ createFilterOptions(
   state.selectedAttributes,
   "attribute",
 );
-createFilterOptions(elements.integralFilters, INTEGRAL_SERIES, integralLabels, state.selectedSeries, "series");
+createFilterOptions(
+  elements.chapterOneIntegralFilters,
+  CHAPTER_INTEGRAL_SERIES[1],
+  integralLabels,
+  state.selectedSeries,
+  "series",
+);
+createFilterOptions(
+  elements.chapterTwoIntegralFilters,
+  CHAPTER_INTEGRAL_SERIES[2],
+  integralLabels,
+  state.selectedSeries,
+  "series",
+);
 createFilterOptions(elements.chaosLevelFilters, CHAOS_LEVELS, chaosLevelLabels[state.language], state.selectedChaosLevels, "chaosLevel");
-createFilterOptions(elements.chapterFilters, CHAPTERS, chapterLabels[state.language], state.selectedChapters, "chapter");
+createFilterOptions(elements.chapterOneFilters, ["1"], chapterLabels[state.language], state.selectedChapters, "chapter");
+createFilterOptions(elements.chapterTwoFilters, ["2"], chapterLabels[state.language], state.selectedChapters, "chapter");
 createFilterOptions(elements.locationFilters, LOCATION_TYPES, locationLabels, state.selectedLocations, "location");
 createFilterOptions(elements.ingotEffectFilters, INGOT_NUMERIC_EFFECT_TYPES, ingotFilterLabels.ja, state.selectedIngotNumericEffects, "ingotEffect");
 createFilterOptions(elements.ingotEffectFilters, INGOT_VALUE_TYPES, ingotFilterLabels.ja, state.selectedIngotValueTypes, "ingotEffect");
