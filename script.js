@@ -35,6 +35,7 @@ const LABYRINTH_DETAIL_IMAGES = {
   75: ["75.png"],
   79: ["79.png"],
   83: ["83.png"],
+  85: ["85.png"],
   89: ["89_1.png", "89_2.png"],
   91: ["91.png"],
   100: ["100_1.png", "100_2.png"],
