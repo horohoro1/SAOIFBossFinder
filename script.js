@@ -494,10 +494,11 @@ function createFilterOptions(container, values, labels, selectionSet, type) {
     input.addEventListener("change", () => {
       if (type === "series") {
         if (input.checked) {
+          convertSelectedChaptersToManualSeries();
           state.manuallySelectedSeries.add(value);
         } else {
           state.manuallySelectedSeries.delete(value);
-          deselectChaptersForIntegralSeries(value);
+          convertSelectedChaptersToManualSeries(value);
         }
         syncChapterIntegralSeriesSelection();
       } else {
@@ -955,22 +956,20 @@ function syncChapterIntegralSeriesSelection() {
   });
 }
 
-function deselectChaptersForIntegralSeries(series) {
-  const chaptersToClear = [...state.selectedChapters].filter((chapter) =>
-    (CHAPTER_INTEGRAL_SERIES[chapter] || []).includes(series),
-  );
-  if (!chaptersToClear.length) return;
+function convertSelectedChaptersToManualSeries(excludedSeries) {
+  if (!state.selectedChapters.size) return;
 
-  chaptersToClear.forEach((chapter) => {
-    (CHAPTER_INTEGRAL_SERIES[chapter] || []).forEach((remainingSeries) => {
-      if (remainingSeries !== series && state.autoSelectedSeries.has(remainingSeries)) {
-        state.manuallySelectedSeries.add(remainingSeries);
+  // A direct series edit turns the active chapter presets into individual selections.
+  state.selectedChapters.forEach((chapter) => {
+    (CHAPTER_INTEGRAL_SERIES[chapter] || []).forEach((series) => {
+      if (series !== excludedSeries && state.autoSelectedSeries.has(series)) {
+        state.manuallySelectedSeries.add(series);
       }
     });
-    state.selectedChapters.delete(chapter);
   });
+  state.selectedChapters.clear();
   elements.chapterFilters.querySelectorAll('input[type="checkbox"]').forEach((input) => {
-    if (chaptersToClear.includes(input.value)) input.checked = false;
+    input.checked = false;
   });
 }
 
