@@ -57,12 +57,12 @@ const UNDERGROUND_LABYRINTH_DETAIL_IMAGES = {
   B8F: ["b8.png"],
 };
 const CHAOS_DETAIL_IMAGES = {
-  195: { 突: ["195pi_1.jpg", "195pi_2.jpg"] },
-  215: { 斬: ["215sl_1.png", "215sl_2.png"] },
-  235: { 打: ["235st.png"] },
-  255: { 打: ["255st_1.png", "255st_2.png"] },
-  275: { 突: ["275pi_1.png", "275pi_2.png"] },
-  295: { 斬: ["295sl_1.png", "295sl_2.jpg"] },
+  195: { 突: ["195pi_1.jpg", "195pi_2.jpg"], 打: ["195st.png"] },
+  215: { 斬: ["215sl_1.png", "215sl_2.png"], 打: ["215st_1.png", "215st_2.png"] },
+  235: { 打: ["235st.png"], 突: ["235pi.png"] },
+  255: { 斬: ["255sl_1.png", "255sl_2.png"], 打: ["255st_1.png", "255st_2.png"] },
+  275: { 斬: ["275sl_1.png", "275sl_2.png"], 突: ["275pi_1.png", "275pi_2.png"] },
+  295: { 斬: ["295sl_1.png", "295sl_2.jpg"], 打: ["295st.png"] },
 };
 const COMBAT_ICON_FILES = {
   斬: "slash.png",
